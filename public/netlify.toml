@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://www.memint.me"
+  from = "/"
   to = "https://memint.xyz"
   status = 301
   force = false
