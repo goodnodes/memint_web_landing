@@ -1,6 +1,11 @@
 import { useRef } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Explore from "./pages/Explore";
+import About from "./pages/About";
+import Roadmap from "./pages/Roadmap";
+import MarketPlace from "./pages/MarketPlace";
+import Download from "./pages/Download";
 
 function App() {
   const outerDivRef = useRef();
@@ -41,21 +46,11 @@ function App() {
   return (
     <div ref={outerDivRef} className="outer">
       <Header onClick={handlePageMove} />
-      <div className="inner intro">
-        <p>Intro page</p>
-      </div>
-      <div className="inner about">
-        <p>About page</p>
-      </div>
-      <div className="inner roadmap">
-        <p>Roadmap page</p>
-      </div>
-      <div className="inner marketplace">
-        <p>Marketplace page</p>
-      </div>
-      <div className="inner download">
-        <p>Download page</p>
-      </div>
+      <Explore />
+      <About />
+      <Roadmap />
+      <MarketPlace />
+      <Download />
     </div>
   );
 }
