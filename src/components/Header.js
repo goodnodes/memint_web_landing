@@ -3,7 +3,11 @@ import "./Header.css";
 function Header({ onClick }) {
   return (
     <div className="container">
-      <img src="icon/memint.png" style={{ marginLeft: "10%", height: "30%" }} />
+      <img
+        src="icon/memint.png"
+        style={{ marginLeft: "10%", height: "30%" }}
+        alt="logo"
+      />
       <div
         style={{
           width: "50%",
