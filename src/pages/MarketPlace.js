@@ -13,7 +13,7 @@ function MarketPlace() {
           position: "relative",
         }}
       >
-        <h1>지금 난리 난 인기 미팅</h1>
+        <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
         <div
           style={{
             width: "83%",
@@ -32,7 +32,16 @@ function MarketPlace() {
           style={{ height: "15%", position: "absolute", right: 19, top: 0 }}
         />
       </div>
-      <h3 style={{ position: "absolute", bottom: "2%" }}>SEE MORE</h3>
+      <h3
+        style={{
+          position: "absolute",
+          bottom: "2%",
+          color: "white",
+          fontFamily: "mechanical-en",
+        }}
+      >
+        SEE MORE
+      </h3>
     </div>
   );
 }

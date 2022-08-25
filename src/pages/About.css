@@ -51,7 +51,7 @@
   content: "";
   top: 0;
   left: 0;
-  opacity: 0.3;
-
+  opacity: 0.015;
+  background-color: white;
   z-index: -1;
 }

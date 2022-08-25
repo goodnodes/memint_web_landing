@@ -21,7 +21,7 @@ function Header({ onClick }) {
               onClick("Explore");
             }}
           >
-            Explore
+            <p style={{ color: "white", fontWeight: "600" }}>Explore</p>
           </div>
           <div
             className="tab"
@@ -29,7 +29,7 @@ function Header({ onClick }) {
               onClick("About");
             }}
           >
-            About
+            <p style={{ color: "white", fontWeight: "600" }}>About</p>
           </div>
           <div
             className="tab"
@@ -37,7 +37,7 @@ function Header({ onClick }) {
               onClick("Roadmap");
             }}
           >
-            Roadmap
+            <p style={{ color: "white", fontWeight: "600" }}>Roadmap</p>
           </div>
           <div
             className="tab"
@@ -45,7 +45,7 @@ function Header({ onClick }) {
               onClick("Marketplace");
             }}
           >
-            Marketplace
+            <p style={{ color: "white", fontWeight: "600" }}>Marketplace</p>
           </div>
           <div
             className="tab"
@@ -53,7 +53,7 @@ function Header({ onClick }) {
               onClick("Download");
             }}
           >
-            Download
+            <p style={{ color: "white", fontWeight: "600" }}>Download</p>
           </div>
         </div>
       </div>

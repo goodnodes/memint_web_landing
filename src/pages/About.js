@@ -4,12 +4,17 @@ function About() {
   return (
     <div className="About">
       <div className="title">
-        <h1>퇴근 후에 뭐해?</h1>
-        <h1 style={{ marginTop: -7 }}>2:2 미팅 어때!</h1>
+        <h1 style={{ textAlign: "center", color: "white" }}>
+          퇴근 후에 뭐해?
+          <br />
+          2:2 미팅 어때!
+        </h1>
       </div>
       <div className="step1">
         <div className="transparentbox">
-          <h1>step1</h1>
+          <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
+            step1
+          </h1>
           <div style={{ display: "flex", flex: 1 }}>
             <img
               src="icon/meetingmeta.png"
@@ -17,14 +22,14 @@ function About() {
               style={{ height: "80%" }}
             />
             <div style={{ marginLeft: 40, flex: 1 }}>
-              <h2 style={{ marginTop: -10 }}>
+              <h2 style={{ marginTop: -10, color: "white", fontWeight: "400" }}>
                 원하는 미팅에 참여하세요.
                 <br />
                 또는 새로운 미팅을 만들어
                 <br />
                 직접 주선해보아요!
               </h2>
-              <h3 style={{ fontSize: 15 }}>미팅 생성 +</h3>
+              <h3 style={{ fontSize: 15, color: "#58FF7D" }}>미팅 생성 +</h3>
             </div>
           </div>
         </div>
@@ -41,8 +46,10 @@ function About() {
               width: "77%",
             }}
           >
-            <h1>step2</h1>
-            <h2 style={{ marginLeft: "6%" }}>
+            <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
+              step2
+            </h1>
+            <h2 style={{ marginLeft: "6%", color: "white", fontWeight: "400" }}>
               매칭된 미팅메이트들과
               <br />
               대화를 나누세요!
@@ -58,7 +65,9 @@ function About() {
           className="transparentbox"
           style={{ paddingRight: "6%", width: "40%" }}
         >
-          <h1>step3</h1>
+          <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
+            step3
+          </h1>
           <div
             style={{
               display: "flex",
@@ -78,7 +87,13 @@ function About() {
                 alt="verifybutton"
                 style={{ height: "23%", marginLeft: "-20px" }}
               />
-              <h2 style={{ marginTop: "-11px" }}>
+              <h2
+                style={{
+                  marginTop: "-11px",
+                  color: "white",
+                  fontWeight: "400",
+                }}
+              >
                 새로운 친구들과의
                 <br />
                 만남을 즐겨보세요
@@ -103,8 +118,10 @@ function About() {
               width: "77%",
             }}
           >
-            <h1>step4</h1>
-            <h2 style={{ marginLeft: "6%" }}>
+            <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
+              step4
+            </h1>
+            <h2 style={{ marginLeft: "6%", color: "white", fontWeight: "400" }}>
               미팅에 성실히 임한 당신,
               <br />
               TING으로 보상 받으세요!
@@ -138,7 +155,15 @@ function About() {
                   alignItems: "flex-end",
                 }}
               >
-                <h1 style={{ fontSize: 50 }}>TING</h1>
+                <h1
+                  style={{
+                    fontSize: 50,
+                    color: "white",
+                    fontFamily: "mechanical-en",
+                  }}
+                >
+                  TING
+                </h1>
               </div>
             </div>
             <div style={{ flex: 1 }}>

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "mechanical";
+  font-display: fallback;
+  src: url("./NeoDunggeunmoPro-Regular.ttf") format("truetype"),
+    url("./NeoDunggeunmoPro-Regular.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "mechanical-en";
+  src: url("./slkscr-webfont.ttf") format("truetype"),
+    url("./slkscr-webfont.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
