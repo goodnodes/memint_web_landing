@@ -1,5 +1,57 @@
 .About {
-  background-color: palegreen;
-  height: 100vh;
+  height: 160vh;
   display: flex;
+  flex-direction: column;
+}
+.title {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step1 {
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  flex: 1;
+}
+.step2 {
+  display: flex;
+  padding-right: 5%;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.step3 {
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  flex: 1;
+}
+.step4 {
+  display: flex;
+  padding-right: 5%;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.transparentbox {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  padding-left: 6%;
+}
+.transparentbox ::after {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+
+  z-index: -1;
 }

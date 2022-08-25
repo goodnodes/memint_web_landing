@@ -6,31 +6,3 @@ body {
   height: 100vh;
   overflow-y: auto;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  position: absolute;
-  width: 100%;
-  background-color: aliceblue;
-  z-index: 10;
-}
-.logo {
-  margin-left: 10px;
-}
-.lang {
-  margin-right: 10px;
-}
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.tab {
-  margin: 7px;
-  padding: 6px;
-  border-width: 1px;
-  border-style: solid;
-}

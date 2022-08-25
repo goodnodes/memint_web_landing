@@ -1,31 +1,27 @@
 .Explore {
-  padding-top: 60px;
-
-  background-color: palegoldenrod;
   height: 160vh;
   display: flex;
   flex-direction: column;
 }
-
 .ment {
   flex: 1;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: mintcream;
 }
 .download {
-  flex: 1;
+  flex: 1.5;
   display: flex;
-  background-color: antiquewhite;
+
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
   position: relative;
 }
 .desc {
   flex: 1.8;
   display: flex;
-  background-color: palevioletred;
+
   align-items: center;
   justify-content: center;
 }
@@ -34,18 +30,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
-.arrow {
-  position: absolute;
-  height: 23%;
-  width: 45%;
-}
-.egg {
-  height: 53%;
-}
+
 .textbox {
   width: 50%;
-  background-color: beige;
+
   height: 100%;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20%;
 }

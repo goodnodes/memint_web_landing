@@ -1,52 +1,72 @@
-import "../App.css";
-
 function Header({ onClick }) {
   return (
-    <div className="header">
-      <p className="logo">Logo</p>
-      <div className="box">
+    <div
+      style={{
+        width: "100%",
+        height: "9vh",
+        display: "flex",
+        position: "absolute",
+        justifyContent: "space-between",
+        alignItems: "center",
+
+        zIndex: 10,
+      }}
+    >
+      <p style={{ paddingLeft: "10%" }}>Logo</p>
+      <div
+        style={{ width: "50%", display: "flex", justifyContent: "flex-end" }}
+      >
         <div
-          className="tab"
-          onClick={() => {
-            onClick("Explore");
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            width: "60%",
           }}
         >
-          Explore
-        </div>
-        <div
-          className="tab"
-          onClick={() => {
-            onClick("About");
-          }}
-        >
-          About
-        </div>
-        <div
-          className="tab"
-          onClick={() => {
-            onClick("Roadmap");
-          }}
-        >
-          Roadmap
-        </div>
-        <div
-          className="tab"
-          onClick={() => {
-            onClick("Marketplace");
-          }}
-        >
-          Marketplace
-        </div>
-        <div
-          className="tab"
-          onClick={() => {
-            onClick("Download");
-          }}
-        >
-          Download
+          <div
+            className="tab"
+            onClick={() => {
+              onClick("Explore");
+            }}
+          >
+            Explore
+          </div>
+          <div
+            className="tab"
+            onClick={() => {
+              onClick("About");
+            }}
+          >
+            About
+          </div>
+          <div
+            className="tab"
+            onClick={() => {
+              onClick("Roadmap");
+            }}
+          >
+            Roadmap
+          </div>
+          <div
+            className="tab"
+            onClick={() => {
+              onClick("Marketplace");
+            }}
+          >
+            Marketplace
+          </div>
+          <div
+            className="tab"
+            onClick={() => {
+              onClick("Download");
+            }}
+          >
+            Download
+          </div>
         </div>
       </div>
-      <p className="lang">lang</p>
+      <p style={{ paddingRight: "10%" }}>lang</p>
     </div>
   );
 }
