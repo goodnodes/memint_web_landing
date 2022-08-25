@@ -11,13 +11,18 @@ function Explore() {
       <div className="download">
         <h1>COMING SOON!</h1>
         <div>
-          <img src="icon/playstore.png" />
-          <img style={{ marginLeft: 10 }} src="icon/appstore.png" />
+          <img src="icon/playstore.png" alt="playstore" />
+          <img
+            style={{ marginLeft: 10 }}
+            alt="appstore"
+            src="icon/appstore.png"
+          />
         </div>
-        <img src="icon/downarrow.png" className="arrow" />
+        <img src="icon/downarrow.png" alt="downarrow" className="arrow" />
       </div>
       <div className="desc">
         <img
+          alt="dinoeggs"
           src="icon/dinoeggs.png "
           style={{ height: "80%", marginRight: "60px" }}
         />

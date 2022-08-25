@@ -28,6 +28,7 @@ function MarketPlace() {
         </div>
         <img
           src="icon/exclamationmark.png"
+          alt="exclamationmark"
           style={{ height: "15%", position: "absolute", right: 19, top: 0 }}
         />
       </div>

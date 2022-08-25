@@ -20,9 +20,13 @@ function Footer() {
       >
         <p style={{ color: "gray" }}>© 2022 PEOPLE CHAIN, INC.</p>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img src="icon/mail.png" style={{ margin: 15 }} />
-          <img src="icon/instagram.png" style={{ margin: 15 }} />
-          <img src="icon/facebook.png" style={{ margin: 15 }} />
+          <img src="icon/mail.png" alt="mail" style={{ margin: 15 }} />
+          <img
+            src="icon/instagram.png"
+            alt="instagram"
+            style={{ margin: 15 }}
+          />
+          <img src="icon/facebook.png" alt="facebook" style={{ margin: 15 }} />
         </div>
       </div>
     </div>

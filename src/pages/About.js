@@ -11,7 +11,11 @@ function About() {
         <div className="transparentbox">
           <h1>step1</h1>
           <div style={{ display: "flex", flex: 1 }}>
-            <img src="icon/meetingmeta.png" style={{ height: "80%" }} />
+            <img
+              src="icon/meetingmeta.png"
+              alt="meetingmeta"
+              style={{ height: "80%" }}
+            />
             <div style={{ marginLeft: 40, flex: 1 }}>
               <h2 style={{ marginTop: -10 }}>
                 원하는 미팅에 참여하세요.
@@ -45,7 +49,7 @@ function About() {
             </h2>
           </div>
           <div>
-            <img src="icon/chat.png" style={{ height: "80%" }} />
+            <img src="icon/chat.png" alt="chat" style={{ height: "80%" }} />
           </div>
         </div>
       </div>
@@ -62,11 +66,16 @@ function About() {
             }}
           >
             <div style={{ borderRadius: "15px" }}>
-              <img src="icon/verify.png" style={{ height: "120%" }} />
+              <img
+                src="icon/verify.png"
+                alt="verify"
+                style={{ height: "120%" }}
+              />
             </div>
             <div style={{ marginLeft: 20, flex: 1 }}>
               <img
                 src="icon/verifybutton.png"
+                alt="verifybutton"
                 style={{ height: "23%", marginLeft: "-20px" }}
               />
               <h2 style={{ marginTop: "-11px" }}>
@@ -115,7 +124,11 @@ function About() {
                   justifyContent: "flex-end",
                 }}
               >
-                <img src="icon/smallcoin.png" style={{ width: "35%" }} />
+                <img
+                  src="icon/smallcoin.png"
+                  alt="smallcoin"
+                  style={{ width: "35%" }}
+                />
               </div>
               <div
                 style={{
@@ -129,7 +142,11 @@ function About() {
               </div>
             </div>
             <div style={{ flex: 1 }}>
-              <img src="icon/bigcoin.png" style={{ width: "90%" }} />
+              <img
+                src="icon/bigcoin.png"
+                alt="bigcoin"
+                style={{ width: "90%" }}
+              />
             </div>
           </div>
         </div>

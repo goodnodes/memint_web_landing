@@ -26,7 +26,7 @@ function About2() {
               <h3>이 귀여운 공룡은 뭐야~</h3>
               <h1>나만을 위한 NFT 아바타</h1>
               <div style={{ flex: 1, width: "100%" }}>
-                <img src="icon/avatar.png" style={{}} />
+                <img src="icon/avatar.png" alt="avatar" />
               </div>
             </div>
           </div>
@@ -43,8 +43,9 @@ function About2() {
               <br />
               전하는 마음
             </h1>
-            <img src="icon/dontsend.png" />
+            <img src="icon/dontsend.png" alt="dontsend" />
             <img
+              alt="emotion"
               src="icon/emotion.png"
               style={{ height: "54%", width: "60%", position: "absolute" }}
             />
@@ -72,7 +73,7 @@ function About2() {
             <h3>어떤 사람이 미팅하는지 궁금해!</h3>
             <h1 style={{ marginTop: -10 }}>베일에 싸인</h1>
             <h1 style={{ marginTop: -20 }}>프로필 이미지 확인</h1>
-            <img src="icon/profile.png" />
+            <img src="icon/profile.png" alt="profile" />
           </div>
         </div>
       </div>

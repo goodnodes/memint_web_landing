@@ -13,7 +13,7 @@ function Roadmap() {
       >
         <h1>ROADMAP</h1>
       </div>
-      <img src="icon/roadmap.png" style={{ width: "80%" }} />
+      <img src="icon/roadmap.png" alt="roadmap" style={{ width: "80%" }} />
     </div>
   );
 }
