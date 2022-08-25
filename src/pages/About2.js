@@ -38,8 +38,8 @@ function About2() {
           <div
             style={{
               flex: 1,
-
               position: "relative",
+              marginLeft: "5%",
             }}
           >
             <h3 style={{ color: "white" }}>호감을 표현할 타이밍을 놓쳤다면,</h3>
@@ -52,7 +52,7 @@ function About2() {
             <img
               alt="emotion"
               src="icon/emotion.png"
-              style={{ height: "54%", width: "60%", position: "absolute" }}
+              style={{ height: "54%", width: "45%", position: "absolute" }}
             />
           </div>
         </div>

@@ -1,5 +1,6 @@
 .About2 {
   height: 175vh;
+  margin-top: 18vh;
   display: flex;
   flex-direction: column;
 }
