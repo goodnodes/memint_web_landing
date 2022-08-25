@@ -1,17 +1,8 @@
+import "./Header.css";
+
 function Header({ onClick }) {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "9vh",
-        display: "flex",
-        position: "absolute",
-        justifyContent: "space-between",
-        alignItems: "center",
-
-        zIndex: 10,
-      }}
-    >
+    <div className="container">
       <p style={{ paddingLeft: "10%" }}>Logo</p>
       <div
         style={{ width: "50%", display: "flex", justifyContent: "flex-end" }}
