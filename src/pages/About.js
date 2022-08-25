@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="About">
       <div className="title">
-        <h1 style={{ textAlign: "center", color: "white" }}>
+        <h1 style={{ textAlign: "center", color: "white", lineHeight: "45px" }}>
           퇴근 후에 뭐해?
           <br />
           2:2 미팅 어때!
@@ -22,7 +22,14 @@ function About() {
               style={{ height: "80%" }}
             />
             <div style={{ marginLeft: 40, flex: 1 }}>
-              <h2 style={{ marginTop: -10, color: "white", fontWeight: "400" }}>
+              <h2
+                style={{
+                  marginTop: 6,
+                  color: "white",
+                  fontWeight: "400",
+                  lineHeight: "30px",
+                }}
+              >
                 원하는 미팅에 참여하세요.
                 <br />
                 또는 새로운 미팅을 만들어
@@ -49,7 +56,14 @@ function About() {
             <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
               step2
             </h1>
-            <h2 style={{ marginLeft: "6%", color: "white", fontWeight: "400" }}>
+            <h2
+              style={{
+                marginLeft: "6%",
+                color: "white",
+                fontWeight: "400",
+                lineHeight: "30px",
+              }}
+            >
               매칭된 미팅메이트들과
               <br />
               대화를 나누세요!
@@ -92,6 +106,7 @@ function About() {
                   marginTop: "-11px",
                   color: "white",
                   fontWeight: "400",
+                  lineHeight: "30px",
                 }}
               >
                 새로운 친구들과의
@@ -121,7 +136,14 @@ function About() {
             <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
               step4
             </h1>
-            <h2 style={{ marginLeft: "6%", color: "white", fontWeight: "400" }}>
+            <h2
+              style={{
+                marginLeft: "6%",
+                color: "white",
+                fontWeight: "400",
+                lineHeight: "30px",
+              }}
+            >
               미팅에 성실히 임한 당신,
               <br />
               TING으로 보상 받으세요!
@@ -134,7 +156,7 @@ function About() {
               width: "77%",
             }}
           >
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, marginRight: "30px" }}>
               <div
                 style={{
                   display: "flex",
@@ -157,9 +179,10 @@ function About() {
               >
                 <h1
                   style={{
-                    fontSize: 50,
+                    fontSize: 60,
                     color: "white",
                     fontFamily: "mechanical-en",
+                    fontWeight: "400",
                   }}
                 >
                   TING
@@ -170,7 +193,7 @@ function About() {
               <img
                 src="icon/bigcoin.png"
                 alt="bigcoin"
-                style={{ width: "90%" }}
+                style={{ width: "180px", height: "180px" }}
               />
             </div>
           </div>

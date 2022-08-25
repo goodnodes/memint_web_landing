@@ -14,8 +14,16 @@ function Download() {
         DOWNLOADS
       </h1>
       <div style={{ display: "flex", marginTop: "5%" }}>
-        <img src="icon/playstore.png" alt="playstore" />
-        <img src="icon/appstore.png" alt="appstore" />
+        <img
+          src="icon/playstore.png"
+          alt="playstore"
+          style={{ marginRight: "2.5%" }}
+        />
+        <img
+          src="icon/appstore.png"
+          alt="appstore"
+          style={{ marginLeft: "2.5%" }}
+        />
       </div>
     </div>
   );

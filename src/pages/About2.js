@@ -52,7 +52,7 @@ function About2() {
             <img
               alt="emotion"
               src="icon/emotion.png"
-              style={{ height: "54%", width: "45%", position: "absolute" }}
+              style={{ height: "200px", width: "280px", position: "absolute" }}
             />
           </div>
         </div>
@@ -86,7 +86,14 @@ function About2() {
       </div>
       <div className="container2">
         <h1 style={{ color: "white" }}>더 나은 만남, 더 나은 미팅</h1>
-        <h3 style={{ textAlign: "center", marginTop: -10, color: "white" }}>
+        <h3
+          style={{
+            textAlign: "center",
+            marginTop: -10,
+            color: "white",
+            lineHeight: "30px",
+          }}
+        >
           좋은 사람들을 위한 좋은 커뮤니티를 지향합니다.
           <br />
           TING 보상 및 소모, 미팅 메이트 평가, 신고 등의 유저 관리 시스템과

@@ -40,5 +40,6 @@
 
 .arrow {
   position: absolute;
-  bottom: 20%;
+  bottom: 8%;
+  height: 60px;
 }

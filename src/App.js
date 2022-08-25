@@ -14,7 +14,7 @@ function App() {
   const outerDivRef = useRef();
   const pageHeight = window.innerHeight;
   const aboutHeight = 1.6 * pageHeight;
-  const roadmapHeight = aboutHeight + 3.28 * pageHeight;
+  const roadmapHeight = aboutHeight + 3.47 * pageHeight;
   const marketHeight = roadmapHeight + 1.1 * pageHeight;
   const downloadHeight = marketHeight + pageHeight;
   const handlePageMove = (text) => {
