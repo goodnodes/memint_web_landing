@@ -70,7 +70,7 @@ function About() {
             </h2>
           </div>
           <div>
-            <img src="icon/chat.png" alt="chat" style={{ height: "80%" }} />
+            <img src="icon/chat.png" alt="chat" style={{ height: "83%" }} />
           </div>
         </div>
       </div>

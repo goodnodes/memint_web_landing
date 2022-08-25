@@ -21,25 +21,32 @@ function About2() {
               padding: "10%",
             }}
           >
-            <div style={{ width: "100%", height: "100%" }}>
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
               <h3 style={{ color: "white" }}>이 귀여운 공룡은 뭐야~</h3>
               <h1 style={{ color: "white", marginTop: -10 }}>
                 나만을 위한 NFT 아바타
               </h1>
-              <div style={{ flex: 1, width: "100%" }}>
-                <img
-                  src="icon/avatar.png"
-                  alt="avatar"
-                  style={{ width: "70%" }}
-                />
-              </div>
+
+              <img
+                src="icon/avatar.png"
+                alt="avatar"
+                style={{ width: "80%" }}
+              />
             </div>
           </div>
           <div
             style={{
               flex: 1,
               position: "relative",
-              marginLeft: "5%",
+              marginLeft: "15%",
             }}
           >
             <h3 style={{ color: "white" }}>호감을 표현할 타이밍을 놓쳤다면,</h3>
@@ -59,7 +66,6 @@ function About2() {
         <div
           style={{
             flex: 1,
-
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -69,10 +75,10 @@ function About2() {
             style={{
               height: "60%",
               width: "100%",
-
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-end",
+              marginRight: "10%",
             }}
           >
             <h3 style={{ color: "white" }}>어떤 사람이 미팅하는지 궁금해!</h3>
@@ -80,7 +86,11 @@ function About2() {
             <h1 style={{ marginTop: -20, color: "white" }}>
               프로필 이미지 확인
             </h1>
-            <img src="icon/profile.png" alt="profile" />
+            <img
+              src="icon/profile.png"
+              alt="profile"
+              style={{ width: "80%" }}
+            />
           </div>
         </div>
       </div>

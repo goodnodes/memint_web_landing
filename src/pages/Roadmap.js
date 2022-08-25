@@ -11,7 +11,15 @@ function Roadmap() {
           justifyContent: "center",
         }}
       >
-        <h1 style={{ color: "white", fontFamily: "mechanical-en" }}>ROADMAP</h1>
+        <h1
+          style={{
+            color: "white",
+            fontFamily: "mechanical-en",
+            paddingTop: "8vh",
+          }}
+        >
+          ROADMAP
+        </h1>
       </div>
       <img src="icon/roadmap.png" alt="roadmap" style={{ width: "80%" }} />
     </div>

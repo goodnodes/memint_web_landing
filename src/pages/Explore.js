@@ -33,20 +33,17 @@ function Explore() {
         >
           COMING SOON!
         </h1>
-        <div>
-          <img src="icon/playstore.png" alt="playstore" />
-          <img
-            style={{ marginLeft: "25px", height: "103px", width: "330px" }}
-            alt="appstore"
-            src="icon/appstore.png"
-          />
-        </div>
-        <img src="icon/downarrow.png" alt="downarrow" className="arrow" />
+
+        <img
+          src="icon/eggdownload.png"
+          style={{ width: "45%" }}
+          alt="eggdownload"
+        />
       </div>
       <div className="desc">
         <img
-          alt="dinoeggs"
-          src="icon/dinoeggs.png"
+          alt="dinowitheggs"
+          src="icon/dinowitheggs.png"
           style={{ height: "80%", marginRight: "60px" }}
         />
         <div className="textbox">
@@ -56,12 +53,12 @@ function Explore() {
           <h1 style={{ marginTop: "-19px", color: "white" }}>
             당신을 위한 미팅앱
           </h1>
-          <h3 style={{ color: "white", lineHeight: "25px" }}>
+          <h3 style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}>
             미민트에서는 누구나 미팅을 열고 참여할 수 있어요. <br />
             새로운 친구들과 더 재미있고 특별한 일상을 만들어보세요!
           </h3>
 
-          <h3 style={{ color: "white", lineHeight: "25px" }}>
+          <h3 style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}>
             열심히 미팅을 즐긴 당신,
             <br />
             토큰(TING)보상은 덤(윙크)
