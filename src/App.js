@@ -13,6 +13,10 @@ import background from "./assets/background.png";
 function App() {
   const outerDivRef = useRef();
   const pageHeight = window.innerHeight;
+  const aboutHeight = 1.6 * pageHeight;
+  const roadmapHeight = aboutHeight + 3.28 * pageHeight;
+  const marketHeight = roadmapHeight + 1.1 * pageHeight;
+  const downloadHeight = marketHeight + pageHeight;
   const handlePageMove = (text) => {
     if (text === "Explore") {
       outerDivRef.current.scrollTo({
@@ -22,25 +26,25 @@ function App() {
       });
     } else if (text === "About") {
       outerDivRef.current.scrollTo({
-        top: pageHeight,
+        top: aboutHeight,
         legt: 0,
         behavior: "smooth",
       });
     } else if (text === "Roadmap") {
       outerDivRef.current.scrollTo({
-        top: pageHeight * 2,
+        top: roadmapHeight,
         legt: 0,
         behavior: "smooth",
       });
     } else if (text === "Marketplace") {
       outerDivRef.current.scrollTo({
-        top: pageHeight * 3,
+        top: marketHeight,
         legt: 0,
         behavior: "smooth",
       });
     } else if (text === "Download") {
       outerDivRef.current.scrollTo({
-        top: pageHeight * 4,
+        top: downloadHeight,
         legt: 0,
         behavior: "smooth",
       });

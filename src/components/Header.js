@@ -3,9 +3,14 @@ import "./Header.css";
 function Header({ onClick }) {
   return (
     <div className="container">
-      <p style={{ paddingLeft: "10%" }}>Logo</p>
+      <img src="icon/memint.png" style={{ marginLeft: "10%", height: "30%" }} />
       <div
-        style={{ width: "50%", display: "flex", justifyContent: "flex-end" }}
+        style={{
+          width: "50%",
+          display: "flex",
+          justifyContent: "flex-end",
+          paddingRight: "10%",
+        }}
       >
         <div
           style={{
@@ -57,7 +62,9 @@ function Header({ onClick }) {
           </div>
         </div>
       </div>
-      <p style={{ paddingRight: "10%" }}>lang</p>
+      <p style={{ paddingRight: "10%", color: "white", fontWeight: "700" }}>
+        KOR
+      </p>
     </div>
   );
 }
