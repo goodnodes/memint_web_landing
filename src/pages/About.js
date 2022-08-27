@@ -1,10 +1,6 @@
-import { useEffect } from "react";
 import "./About.css";
 
 function About({ engMode, aboutRef }) {
-  // useEffect(() => {
-  //   console.log(aboutRef);
-  // }, []);
   return (
     <div className="About" ref={aboutRef}>
       <div className="title">

@@ -1,10 +1,6 @@
-import { useEffect } from "react";
 import "./Roadmap.css";
 
 function Roadmap({ engMode, roadmapRef }) {
-  // useEffect(() => {
-  //   console.log(roadmapRef);
-  // }, []);
   return (
     <div className="Roadmap" ref={roadmapRef}>
       <div
