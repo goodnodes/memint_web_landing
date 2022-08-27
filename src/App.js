@@ -64,7 +64,6 @@ function App() {
         backgroundImage: `url(${background})`,
         backgroundAttachment: "local",
         backgroundSize: "cover",
-        // overflow: "scroll",
       }}
     >
       <Header

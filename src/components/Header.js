@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./Header.css";
 
 function Header({ onClick, engMode, setEngMode }) {
+  const [isHovering, setIsHovering] = useState("");
   return (
     <div className="container">
       <img
@@ -16,58 +18,116 @@ function Header({ onClick, engMode, setEngMode }) {
           paddingRight: "10%",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            width: "60%",
-          }}
-        >
+        <div className="box">
           <div
-            className="tab"
+            onMouseOver={() => {
+              setIsHovering("Explore");
+            }}
+            onMouseOut={() => {
+              setIsHovering("");
+            }}
             onClick={() => {
               onClick("Explore");
             }}
             style={{ cursor: "pointer" }}
           >
-            <p style={{ color: "white", fontWeight: "600" }}>Explore</p>
+            <p
+              style={
+                isHovering === "Explore"
+                  ? { color: "#AAEFC1", fontWeight: "600" }
+                  : { color: "white", fontWeight: "600" }
+              }
+            >
+              Explore
+            </p>
           </div>
           <div
-            className="tab"
+            onMouseOver={() => {
+              setIsHovering("About");
+            }}
+            onMouseOut={() => {
+              setIsHovering("");
+            }}
             onClick={() => {
               onClick("About");
             }}
             style={{ cursor: "pointer" }}
           >
-            <p style={{ color: "white", fontWeight: "600" }}>About</p>
+            <p
+              style={
+                isHovering === "About"
+                  ? { color: "#AAEFC1", fontWeight: "600" }
+                  : { color: "white", fontWeight: "600" }
+              }
+            >
+              About
+            </p>
           </div>
           <div
-            className="tab"
+            onMouseOver={() => {
+              setIsHovering("Roadmap");
+            }}
+            onMouseOut={() => {
+              setIsHovering("");
+            }}
             onClick={() => {
               onClick("Roadmap");
             }}
             style={{ cursor: "pointer" }}
           >
-            <p style={{ color: "white", fontWeight: "600" }}>Roadmap</p>
+            <p
+              style={
+                isHovering === "Roadmap"
+                  ? { color: "#AAEFC1", fontWeight: "600" }
+                  : { color: "white", fontWeight: "600" }
+              }
+            >
+              Roadmap
+            </p>
           </div>
           <div
-            className="tab"
+            onMouseOver={() => {
+              setIsHovering("Marketplace");
+            }}
+            onMouseOut={() => {
+              setIsHovering("");
+            }}
             onClick={() => {
               onClick("Marketplace");
             }}
             style={{ cursor: "pointer" }}
           >
-            <p style={{ color: "white", fontWeight: "600" }}>Marketplace</p>
+            <p
+              style={
+                isHovering === "Marketplace"
+                  ? { color: "#AAEFC1", fontWeight: "600" }
+                  : { color: "white", fontWeight: "600" }
+              }
+            >
+              Marketplace
+            </p>
           </div>
           <div
-            className="tab"
+            onMouseOver={() => {
+              setIsHovering("Download");
+            }}
+            onMouseOut={() => {
+              setIsHovering("");
+            }}
             onClick={() => {
               onClick("Download");
             }}
             style={{ cursor: "pointer" }}
           >
-            <p style={{ color: "white", fontWeight: "600" }}>Download</p>
+            <p
+              style={
+                isHovering === "Download"
+                  ? { color: "#AAEFC1", fontWeight: "600" }
+                  : { color: "white", fontWeight: "600" }
+              }
+            >
+              Download
+            </p>
           </div>
         </div>
       </div>
