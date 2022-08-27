@@ -1,6 +1,6 @@
-import axios from "axios";
-import { useState, useEffect } from "react";
-import { handleDate, handleBirth } from "../assets/Functions";
+// import axios from "axios";
+import { useState } from "react";
+import { handleBirth } from "../assets/Functions";
 import "./MarketPlace.css";
 
 function MarketPlace({ engMode, marketRef }) {
@@ -8,6 +8,7 @@ function MarketPlace({ engMode, marketRef }) {
   // useEffect(() => {
   //   console.log(pageHeight);
   // }, []);
+  // eslint-disable-next-line no-unused-vars
   const [meetings, setMeetings] = useState([
     {
       meetingInfo: {
@@ -270,7 +271,11 @@ function Box({ data }) {
         }}
       >
         <p>함께하기</p>
-        <img src="icon/triangle.png" style={{ marginLeft: "5px" }} />
+        <img
+          src="icon/triangle.png"
+          alt="triangle"
+          style={{ marginLeft: "5px" }}
+        />
       </div>
     </div>
   );

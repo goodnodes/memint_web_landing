@@ -9,6 +9,7 @@ export const handleDateInFormat = (obj) => {
   const day = obj.toDate().getDay();
   const date = obj.toDate().toLocaleString();
   let str = "";
+  // eslint-disable-next-line default-case
   switch (day) {
     case 0:
       str = "일";
@@ -64,6 +65,7 @@ export const handleISOtoLocale = (dateInISO) => {
   const day = date.getDay();
   const localeDate = date.toLocaleString();
   let str = "";
+  // eslint-disable-next-line default-case
   switch (day) {
     case 0:
       str = "일";

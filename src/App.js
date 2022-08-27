@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Explore from "./pages/Explore";
@@ -51,11 +51,6 @@ function App() {
       });
     }
   };
-  useEffect(() => {
-    console.log(outerDivRef);
-    console.log(aboutRef);
-    console.log(roadmapRef);
-  }, []);
   return (
     <div
       ref={outerDivRef}
