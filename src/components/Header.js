@@ -1,11 +1,11 @@
 import "./Header.css";
 
-function Header({ onClick }) {
+function Header({ onClick, engMode, setEngMode }) {
   return (
     <div className="container">
       <img
-        src="icon/memint.png"
-        style={{ marginLeft: "10%", height: "30%" }}
+        src="icon/logo.png"
+        style={{ marginLeft: "10%", height: "70%" }}
         alt="logo"
       />
       <div
@@ -29,6 +29,7 @@ function Header({ onClick }) {
             onClick={() => {
               onClick("Explore");
             }}
+            style={{ cursor: "pointer" }}
           >
             <p style={{ color: "white", fontWeight: "600" }}>Explore</p>
           </div>
@@ -37,6 +38,7 @@ function Header({ onClick }) {
             onClick={() => {
               onClick("About");
             }}
+            style={{ cursor: "pointer" }}
           >
             <p style={{ color: "white", fontWeight: "600" }}>About</p>
           </div>
@@ -45,6 +47,7 @@ function Header({ onClick }) {
             onClick={() => {
               onClick("Roadmap");
             }}
+            style={{ cursor: "pointer" }}
           >
             <p style={{ color: "white", fontWeight: "600" }}>Roadmap</p>
           </div>
@@ -53,6 +56,7 @@ function Header({ onClick }) {
             onClick={() => {
               onClick("Marketplace");
             }}
+            style={{ cursor: "pointer" }}
           >
             <p style={{ color: "white", fontWeight: "600" }}>Marketplace</p>
           </div>
@@ -61,13 +65,24 @@ function Header({ onClick }) {
             onClick={() => {
               onClick("Download");
             }}
+            style={{ cursor: "pointer" }}
           >
             <p style={{ color: "white", fontWeight: "600" }}>Download</p>
           </div>
         </div>
       </div>
-      <p style={{ paddingRight: "10%", color: "white", fontWeight: "700" }}>
-        KOR
+      <p
+        style={{
+          paddingRight: "10%",
+          color: "white",
+          fontWeight: "700",
+          cursor: "pointer",
+        }}
+        onClick={() => {
+          setEngMode(!engMode);
+        }}
+      >
+        {engMode ? "ENG" : "KOR"}
       </p>
     </div>
   );

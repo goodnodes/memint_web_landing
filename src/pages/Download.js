@@ -1,8 +1,8 @@
 import "./Download.css";
 
-function Download() {
+function Download({ engMode, downloadRef }) {
   return (
-    <div className="Download">
+    <div className="Download" ref={downloadRef}>
       <h1
         style={{
           color: "white",
@@ -19,11 +19,19 @@ function Download() {
           alt="playstore"
           style={{ marginRight: "2.5%" }}
         />
-        <img
-          src="icon/appstore.png"
-          alt="appstore"
-          style={{ marginLeft: "2.5%" }}
-        />
+        {engMode ? (
+          <img
+            src="icon/appstore-en.png"
+            alt="appstore-en"
+            style={{ marginLeft: "2.5%" }}
+          />
+        ) : (
+          <img
+            src="icon/appstore.png"
+            alt="appstore"
+            style={{ marginLeft: "2.5%" }}
+          />
+        )}
       </div>
     </div>
   );

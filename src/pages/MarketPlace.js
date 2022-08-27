@@ -3,7 +3,11 @@ import { useState, useEffect } from "react";
 import { handleDate, handleBirth } from "../assets/Functions";
 import "./MarketPlace.css";
 
-function MarketPlace() {
+function MarketPlace({ engMode, marketRef }) {
+  // const pageHeight = window.innerHeight;
+  // useEffect(() => {
+  //   console.log(pageHeight);
+  // }, []);
   const [meetings, setMeetings] = useState([
     {
       meetingInfo: {
@@ -103,7 +107,7 @@ function MarketPlace() {
   //   });
   // }, []);
   return (
-    <div className="Marketplace">
+    <div className="Marketplace" ref={marketRef}>
       <div
         style={{
           width: "86%",
@@ -114,7 +118,11 @@ function MarketPlace() {
           position: "relative",
         }}
       >
-        <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
+        {engMode ? (
+          <h1 style={{ color: "white" }}>Hot group datings!</h1>
+        ) : (
+          <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
+        )}
         <div
           style={{
             width: "90%",
@@ -130,7 +138,7 @@ function MarketPlace() {
         <img
           src="icon/exclamationmark.png"
           alt="exclamationmark"
-          style={{ height: "15%", position: "absolute", right: 19, top: 0 }}
+          style={{ height: "12%", position: "absolute", right: 19, top: 0 }}
         />
       </div>
       <h3

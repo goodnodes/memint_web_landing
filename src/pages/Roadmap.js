@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import "./Roadmap.css";
 
-function Roadmap() {
+function Roadmap({ engMode, roadmapRef }) {
+  // useEffect(() => {
+  //   console.log(roadmapRef);
+  // }, []);
   return (
-    <div className="Roadmap">
+    <div className="Roadmap" ref={roadmapRef}>
       <div
         style={{
           display: "flex",
@@ -21,7 +25,11 @@ function Roadmap() {
           ROADMAP
         </h1>
       </div>
-      <img src="icon/roadmap.png" alt="roadmap" style={{ width: "80%" }} />
+      {engMode ? (
+        <img src="icon/roadmap-en.png" alt="roadmap" style={{ width: "80%" }} />
+      ) : (
+        <img src="icon/roadmap.png" alt="roadmap" style={{ width: "80%" }} />
+      )}
     </div>
   );
 }
