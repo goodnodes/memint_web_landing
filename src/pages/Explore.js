@@ -113,11 +113,7 @@ function Explore({ engMode }) {
             </h3>
           )}
 
-          {engMode ? (
-            <h3
-              style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}
-            ></h3>
-          ) : (
+          {engMode ? null : (
             <h3
               style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}
             >

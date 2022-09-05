@@ -63,7 +63,7 @@ function About2({ engMode }) {
           >
             {engMode ? (
               <>
-                <h3 style={{ color: "white" }}>Interested in someone?</h3>
+                {/* <h3 style={{ color: "white" }}>Interested in someone?</h3> */}
                 <h1 style={{ color: "white", marginTop: -10, marginBottom: 0 }}>
                   Send a Message
                   <br />
@@ -162,11 +162,12 @@ function About2({ engMode }) {
               flexDirection: "column",
               alignItems: "flex-end",
               marginRight: "10%",
+              marginTop: "10%",
             }}
           >
             {engMode ? (
               <>
-                <h3 style={{ color: "white" }}>Who is the member?</h3>
+                {/* <h3 style={{ color: "white" }}>Who is the member?</h3> */}
                 <h1 style={{ marginTop: -10, color: "white" }}>
                   Unveil Profile Image
                 </h1>
