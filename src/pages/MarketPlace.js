@@ -120,7 +120,7 @@ function MarketPlace({ engMode, marketRef }) {
         }}
       >
         {engMode ? (
-          <h1 style={{ color: "white" }}>Hot group datings!</h1>
+          <h1 style={{ color: "white" }}>Explore Group Meeting</h1>
         ) : (
           <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
         )}

@@ -10,12 +10,12 @@ function Explore({ engMode }) {
               marginTop: "6%",
               textAlign: "center",
               lineHeight: "50px",
-              fontFamily: "mechanical",
+              fontFamily: "mechanical-en",
               fontWeight: "400",
               color: "white",
             }}
           >
-            Make friends, meet people <br /> and enjoy your time! with MEMINT
+            Join, Chat, Date <br /> and Earn
           </h1>
         ) : (
           <h1
@@ -34,7 +34,7 @@ function Explore({ engMode }) {
         )}
         {engMode ? (
           <h2 style={{ color: "#AAEFC1", fontWeight: 400 }}>
-            Web3, group meeting, for you
+            in Web3 Group Dating App, MEMINT
           </h2>
         ) : (
           <h2 style={{ color: "#AAEFC1", fontWeight: 400 }}>
@@ -67,10 +67,10 @@ function Explore({ engMode }) {
           src="icon/dinowitheggs.png"
           style={{ height: "80%", marginRight: "60px" }}
         />
-        <div className="textbox" style={{ marginTop: "50px" }}>
+        <div className="textbox" style={{ marginTop: "14%" }}>
           {engMode ? (
             <h1 style={{ color: "#58FF7D", marginTop: "6%" }}>
-              more fun, more exciting
+              WHAT IS MEMINT
             </h1>
           ) : (
             <h1 style={{ color: "#58FF7D", marginTop: "6%" }}>
@@ -80,7 +80,7 @@ function Explore({ engMode }) {
 
           {engMode ? (
             <h1 style={{ marginTop: "-19px", color: "white" }}>
-              Group dating app for you
+              {/* Group dating app for you */}
             </h1>
           ) : (
             <h1 style={{ marginTop: "-19px", color: "white" }}>
@@ -91,9 +91,18 @@ function Explore({ engMode }) {
             <h3
               style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}
             >
-              You can Join, Create group meeting everytime
+              MEMINT is a web3 dating app with
               <br />
-              Let's make more funny, special days with MEMINT!
+              Game-Fi elements where you can
+              <br />
+              explore and participate in group
+              <br />
+              datings
+              <br />
+              <br />
+              You can earn by making new friends
+              <br />
+              and hanging out with them.
             </h3>
           ) : (
             <h3
@@ -107,11 +116,7 @@ function Explore({ engMode }) {
           {engMode ? (
             <h3
               style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}
-            >
-              Just play, enjoy
-              <br />
-              And earn, TING token
-            </h3>
+            ></h3>
           ) : (
             <h3
               style={{ color: "white", lineHeight: "25px", fontWeight: "400" }}

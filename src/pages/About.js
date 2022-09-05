@@ -8,7 +8,9 @@ function About({ engMode, aboutRef }) {
           <h1
             style={{ textAlign: "center", color: "white", lineHeight: "45px" }}
           >
-            Let me show you MEMINT!
+            Meet New friends
+            <br />
+            in Group Dating
           </h1>
         ) : (
           <h1
@@ -50,11 +52,11 @@ function About({ engMode, aboutRef }) {
                       lineHeight: "30px",
                     }}
                   >
-                    Join the group meeting!
+                    Join any group datings
                     <br />
-                    or you can be a host
+                    or you can make your
                     <br />
-                    by create a new room
+                    own group dating
                   </h2>
                   <h3 style={{ fontSize: 15, color: "#58FF7D" }}>
                     create new room +
@@ -110,9 +112,9 @@ function About({ engMode, aboutRef }) {
                     lineHeight: "30px",
                   }}
                 >
-                  Have a chat
+                  Chat with firends
                   <br />
-                  with other members
+                  before dating
                 </h2>
               </>
             ) : (
@@ -198,14 +200,11 @@ function About({ engMode, aboutRef }) {
                       lineHeight: "30px",
                     }}
                   >
-                    Enjoy your time
+                    Meet Friends
                     <br />
-                    with new faces
+                    and upload selfie
                     <br />
-                    <br />
-                    Take a picture!
-                    <br />
-                    and share the memory
+                    for confirm
                   </h2>
                 </>
               ) : (
@@ -257,9 +256,7 @@ function About({ engMode, aboutRef }) {
                     lineHeight: "30px",
                   }}
                 >
-                  After then? Earn!
-                  <br />
-                  Just play, enjoy, Earn TING token!
+                  Get TINGs!
                 </h2>
               </>
             ) : (

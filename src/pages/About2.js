@@ -33,9 +33,9 @@ function About2({ engMode }) {
             >
               {engMode ? (
                 <>
-                  <h3 style={{ color: "white" }}>Isn't it so lovely?</h3>
+                  {/* <h3 style={{ color: "white" }}>Isn't it so lovely?</h3> */}
                   <h1 style={{ color: "white", marginTop: -10 }}>
-                    Special NFT avatar for you!
+                    Get Your Own NFT Avatar
                   </h1>
                 </>
               ) : (
@@ -65,9 +65,9 @@ function About2({ engMode }) {
               <>
                 <h3 style={{ color: "white" }}>Interested in someone?</h3>
                 <h1 style={{ color: "white", marginTop: -10, marginBottom: 0 }}>
-                  Send it by feedback!
+                  Send a Message
                   <br />
-                  maybe it will be a good relationship
+                  After Dating
                 </h1>
                 <div
                   style={{
@@ -168,10 +168,10 @@ function About2({ engMode }) {
               <>
                 <h3 style={{ color: "white" }}>Who is the member?</h3>
                 <h1 style={{ marginTop: -10, color: "white" }}>
-                  Unlock his/her profile
+                  Unveil Profile Image
                 </h1>
                 <h1 style={{ marginTop: -20, color: "white" }}>
-                  hidden behind the veil
+                  with Spending TING
                 </h1>
               </>
             ) : (
@@ -196,9 +196,7 @@ function About2({ engMode }) {
       <div className="container2">
         {engMode ? (
           <>
-            <h1 style={{ color: "white" }}>
-              Better experience, Better relationship
-            </h1>
+            <h1 style={{ color: "white" }}>Good Place for Good People</h1>
             <h3
               style={{
                 textAlign: "center",
@@ -207,11 +205,15 @@ function About2({ engMode }) {
                 lineHeight: "30px",
               }}
             >
-              We aim for a good community for good people.
+              We aim for a good place for good
               <br />
-              Make better community by Tokenomics,
+              people, Create a better community
               <br />
-              Feedback, report, monitoring system
+              with TING rewards & consumption,
+              <br />
+              user evaluation, reporting, and
+              <br />
+              management monitoring.
             </h3>
           </>
         ) : (

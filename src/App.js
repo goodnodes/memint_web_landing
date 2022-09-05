@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import background from "./assets/background.png";
 
 function App() {
-  const [engMode, setEngMode] = useState(false);
+  const [engMode, setEngMode] = useState(true);
   const outerDivRef = useRef();
   const aboutRef = useRef();
   const roadmapRef = useRef();

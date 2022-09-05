@@ -18,15 +18,15 @@ function Footer() {
           alignItems: "center",
         }}
       >
-        <p style={{ color: "gray" }}>© 2022 PEOPLE CHAIN, INC.</p>
+        <p style={{ color: "gray" }}>© 2022 GOODNODES</p>
         <div style={{ display: "flex", alignItems: "center" }}>
           <img src="icon/mail.png" alt="mail" style={{ margin: 15 }} />
-          <img
+          {/* <img
             src="icon/instagram.png"
             alt="instagram"
             style={{ margin: 15 }}
           />
-          <img src="icon/facebook.png" alt="facebook" style={{ margin: 15 }} />
+          <img src="icon/facebook.png" alt="facebook" style={{ margin: 15 }} /> */}
         </div>
       </div>
     </div>
