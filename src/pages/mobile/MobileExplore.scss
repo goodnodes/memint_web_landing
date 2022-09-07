@@ -1,0 +1,96 @@
+#mobile_explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  .desc,
+  .desc2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 137px;
+    width: 100%;
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 33.6px;
+      letter-spacing: -0.5px;
+      color: #ffffff;
+      margin: 0;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22.4px;
+      letter-spacing: -0.5px;
+      color: #aeffc1;
+      margin: 8px 0 0 0;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 33.6px;
+      letter-spacing: -0.5px;
+      color: #58ff7d;
+      margin: 0;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22.4px;
+      color: #ffffff;
+      margin: 0;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+    .blank{
+      height: 16px;
+    }
+    .blank_big {
+      height: 268px;
+    }
+    #right_coin {
+      position: absolute;
+      right: -85px;
+      bottom: 60px;
+      width: 238.68px;
+      height: 237.93px;
+      transform: rotate(-17.05deg);
+      filter: brightness(0.64);
+      // backdrop-filter: blur(4px);
+    }
+    #left_coin {
+      position: absolute;
+      left: 0;
+      top: -170px;
+      width: 175.41px;
+      height: 174.86px;
+      left: -52px;
+      transform: rotate(11.93deg);
+    }
+  }
+  .comming_soon {
+    font-size: 36px;
+    font-family: "mechanical-en";
+    line-height: 50.4px;
+    color: #ffffff;
+    margin: 64px 0 189px 0;
+  }
+  .download {
+    margin-bottom: 146px;
+    #arrow {
+      width: 347px;
+      height: 58px;
+      z-index: 10;
+    }
+    #egg {
+      width: 90px;
+      height: 119.84px;
+      position: absolute;
+      top: -30px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#mobile_roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 144px;
+  position: relative;
+  height: 300px;
+  background-color: 'blue';
+  margin-bottom: 300px;
+  h1 {
+    font-family: "mechanical-en";
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #ffffff;
+  }
+  img {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: -11.6px;
+  }
+}

@@ -1,0 +1,116 @@
+#mobile_marketplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 180px;
+  margin-bottom: 85px;
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: #ffffff;
+    margin-bottom: 89px;
+  }
+
+  .see_more {
+    font-family: 'mechanical-en';
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    margin-top: 56px;
+  }
+
+  .wrapper {
+    width: 359px;
+    height: 209px;
+    position: relative;
+    margin-bottom: 8px;
+
+    .card {
+      width: 359px;
+      height: 196px;
+      background-color: #eaffefcc;
+      border-radius: 30px;
+      padding: 31px 25px;
+      
+
+      .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 999px;
+          margin-right: 8px;
+        }
+        span {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 140%;
+        }
+      }
+
+      .meetingTitle {
+        height: 44px;
+        font-family: 'mechanical';
+        font-size: 16px;
+        line-height: 22.4px;
+        letter-spacing: -0.5px;
+        margin-bottom: 14px;
+      }
+
+      .meetingInfo{
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 13px;
+          line-height: 140%;
+          font-weight: 500;
+          color: #3C3D43
+        }
+        .bar {
+          width:1px;
+          height: 9px;
+          background-color: #3C3D43;
+          margin: 0 2.7px 3px 2.7px;
+        }
+      }
+      
+      .meetingTags {
+        span {
+          color: #3C3D43;
+          font-size: 13px;
+          line-height: 18.2px;
+          letter-spacing: -0.5px;
+        }
+      }
+    }
+
+    button {
+      width: 113px;
+      height: 49px;
+      border-radius: 999px;
+      padding: 3px 10px 3px 13px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      box-shadow: 0px 4px 16px rgba(174, 255, 192, 0.5);
+      position: absolute;
+      right: 20px;
+      bottom: 0px;
+
+      span {
+        color:#3C3D43;
+        font-size: 16px;
+        line-height: 22.4px;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin-right: 8px;
+      }
+
+    }
+  }
+}
