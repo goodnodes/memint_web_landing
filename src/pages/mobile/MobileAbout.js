@@ -83,14 +83,14 @@ function MobileAbout({ engMode }) {
           <div className="desc_row2">
             <div className="rows">
               <div className="text_align">
-                {engMode ? "Unveil Profile Image" : "나랑 대화하는 이 사람, "}
+                {engMode
+                  ? "Unveil Profile Image with"
+                  : "나랑 대화하는 이 사람, "}
                 <br />
                 {engMode ? "" : "어떤 사람인지 더 알고싶어!"}
               </div>
               <h2>
-                {engMode
-                  ? "with Spending TING"
-                  : "베일에 싸인 프로필 이미지 확인"}
+                {engMode ? "Spending TING" : "베일에 싸인 프로필 이미지 확인"}
               </h2>
             </div>
             <div className="img_view">
@@ -121,21 +121,20 @@ function MobileAbout({ engMode }) {
           )}
 
           <div className="blank" />
-          <h4>
-            {engMode
-              ? "We aim for a good place for good people"
-              : "좋은 사람들을 위한 좋은 커뮤니티를 지향합니다."}
-          </h4>
-          <h4>
-            {engMode
-              ? "Create a better community with TING rewards & consumption,"
-              : "TING 보상과 소모, 미팅메이트 평가, 신고 등의 유저 관리"}
-          </h4>
-          <h4>
-            {engMode
-              ? "user evaluation, reporting, and management monitoring"
-              : "시스템과 모니터링으로 더 나은 커뮤니티를 만듭니다."}
-          </h4>
+          {engMode ? (
+            <>
+              <h4>We aim for a good place for good people</h4>
+              <h4>Create a better community with</h4>
+              <h4>TING rewards & comsumption, user evaluation</h4>
+              <h4>reporting, and management monitoring.</h4>
+            </>
+          ) : (
+            <>
+              <h4>좋은 사람들을 위한 좋은 커뮤니티를 지향합니다.</h4>
+              <h4>TING 보상과 소모, 미팅메이트 평가, 신고 등의 유저 관리</h4>
+              <h4>시스템과 모니터링으로 더 나은 커뮤니티를 만듭니다.</h4>
+            </>
+          )}
         </div>
       </div>
     </div>
