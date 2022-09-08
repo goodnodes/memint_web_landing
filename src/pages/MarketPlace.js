@@ -217,7 +217,7 @@ function Box({ data }) {
               {data.hostInfo.nickName}
             </p>
           </div>
-          <img src="icon/foot.png" alt="foot" />
+          {/* <img src="icon/foot.png" alt="foot" /> */}
         </div>
         <div style={{ height: "40px" }}>
           <p

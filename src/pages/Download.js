@@ -13,25 +13,18 @@ function Download({ engMode, downloadRef }) {
       >
         DOWNLOADS
       </h1>
-      <div style={{ display: "flex", marginTop: "5%" }}>
+      <div style={{ display: "flex", marginTop: "5%", justifyContent:'center' }}>
         <img
           src="icon/playstore.png"
           alt="playstore"
-          style={{ marginRight: "2.5%" }}
+          style={{ marginRight: "2.5%", width: '35%' }}
         />
-        {engMode ? (
           <img
             src="icon/appstore-en.png"
             alt="appstore-en"
-            style={{ marginLeft: "2.5%" }}
+            style={{ marginLeft: "2.5%", width: '35%'}}
           />
-        ) : (
-          <img
-            src="icon/appstore.png"
-            alt="appstore"
-            style={{ marginLeft: "2.5%" }}
-          />
-        )}
+      
       </div>
     </div>
   );
