@@ -32,13 +32,13 @@ function About({ engMode, aboutRef }) {
               <img
                 src="icon/meetingmeta-en.png"
                 alt="meetingmeta-en"
-                style={{ height: "80%" }}
+                style={{ height: "50%" }}
               />
             ) : (
               <img
                 src="icon/meetingmeta.png"
                 alt="meetingmeta"
-                style={{ height: "80%" }}
+                style={{ height: "50%" }}
               />
             )}
             <div style={{ marginLeft: 40, flex: 1 }}>
@@ -139,10 +139,10 @@ function About({ engMode, aboutRef }) {
               <img
                 src="icon/chat-en.png"
                 alt="chat-en"
-                style={{ height: "83%" }}
+                style={{ height: "60%" }}
               />
             ) : (
-              <img src="icon/chat.png" alt="chat" style={{ height: "83%" }} />
+              <img src="icon/chat.png" alt="chat" style={{ height: "60%" }} />
             )}
           </div>
         </div>
@@ -166,13 +166,13 @@ function About({ engMode, aboutRef }) {
                 <img
                   src="icon/verify-en.png"
                   alt="verify-en"
-                  style={{ height: "120%" }}
+                  style={{ height: "60%" }}
                 />
               ) : (
                 <img
                   src="icon/verify.png"
                   alt="verify"
-                  style={{ height: "120%" }}
+                  style={{ height: "60%" }}
                 />
               )}
             </div>
@@ -181,13 +181,13 @@ function About({ engMode, aboutRef }) {
                 <img
                   src="icon/verifybutton-en.png"
                   alt="verifybutton-en"
-                  style={{ height: "23%", marginLeft: "-20px" }}
+                  style={{ height: "13%", marginLeft: "-20px" }}
                 />
               ) : (
                 <img
                   src="icon/verifybutton.png"
                   alt="verifybutton"
-                  style={{ height: "23%", marginLeft: "-20px" }}
+                  style={{ height: "13%", marginLeft: "-20px" }}
                 />
               )}
               {engMode ? (

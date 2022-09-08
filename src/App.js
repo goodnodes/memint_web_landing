@@ -9,6 +9,13 @@ import MarketPlace from "./pages/MarketPlace";
 import Download from "./pages/Download";
 import Footer from "./components/Footer";
 import background from "./assets/background.png";
+import { useMediaQuery } from "react-responsive";
+import MobileHeader from "./components/mobile/MobileHeader";
+import MobileExplore from "./pages/mobile/MobileExplore";
+import MobileAbout from "./pages/mobile/MobileAbout";
+import MobileRoadmap from "./pages/mobile/MobileRoadmap";
+import MobileMarketPlace from "./pages/mobile/MobileMarketPlace";
+import MobileDownload from "./pages/mobile/MobileDownload";
 
 function App() {
   const [engMode, setEngMode] = useState(true);
@@ -17,6 +24,13 @@ function App() {
   const roadmapRef = useRef();
   const marketplaceRef = useRef();
   const downloadRef = useRef();
+
+    const isMobileTablet = useMediaQuery({
+    query: "(max-width: 1023px)",
+  });
+  const isMobile = useMediaQuery({
+    query: "(max-width: 767px)",
+  });
 
   const handlePageMove = (text) => {
     if (text === "Explore") {
@@ -52,28 +66,43 @@ function App() {
     }
   };
   return (
-    <div
-      ref={outerDivRef}
-      className="outer"
-      style={{
-        backgroundImage: `url(${background})`,
-        backgroundAttachment: "local",
-        backgroundSize: "cover",
-      }}
-    >
-      <Header
-        onClick={handlePageMove}
-        setEngMode={setEngMode}
-        engMode={engMode}
-      />
-      <div style={{ height: "9vh" }}></div>
-      <Explore engMode={engMode} />
-      <About aboutRef={aboutRef} engMode={engMode} />
-      <About2 engMode={engMode} />
-      <Roadmap roadmapRef={roadmapRef} engMode={engMode} />
-      <MarketPlace marketRef={marketplaceRef} engMode={engMode} />
-      <Download downloadRef={downloadRef} engMode={engMode} />
-      <Footer />
+    <div>
+      {isMobile || isMobileTablet ? (
+        <div className="mobile_wrapper">
+          <MobileHeader setEngMode={setEngMode} engMode={engMode} />
+          <div className="safe_header" />
+          <MobileExplore engMode={engMode} />
+          <MobileAbout engMode={engMode} />
+          <MobileRoadmap engMode={engMode} />
+          <MobileMarketPlace engMode={engMode} />
+          <MobileDownload engMode={engMode} />
+          <Footer />
+        </div>
+      ) : (
+        <div
+          ref={outerDivRef}
+          className="outer"
+          style={{
+            backgroundImage: `url(${background})`,
+            backgroundAttachment: "local",
+            backgroundSize: "cover",
+          }}
+        >
+          <Header
+            onClick={handlePageMove}
+            setEngMode={setEngMode}
+            engMode={engMode}
+          />
+          <div style={{ height: "9vh" }}></div>
+          <Explore engMode={engMode} />
+          <About aboutRef={aboutRef} engMode={engMode} />
+          <About2 engMode={engMode} />
+          <Roadmap roadmapRef={roadmapRef} engMode={engMode} />
+          <MarketPlace marketRef={marketplaceRef} engMode={engMode} />
+          <Download downloadRef={downloadRef} engMode={engMode} />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }

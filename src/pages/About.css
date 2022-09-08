@@ -2,6 +2,7 @@
   height: 154vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 70vh;
 }
 .title {
   flex: 0.8;
