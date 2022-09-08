@@ -29,7 +29,7 @@
       }
       div {
         width: 237px;
-        font-size: 14px;
+        font-size: 13.5px;
         font-weight: 500;
         line-height: 19.6px;
         color: #ffffff;
@@ -117,7 +117,7 @@
         margin: 4px 0;
       }
       h1 {
-        font-size: 23px;
+        font-size: 24px;
         font-weight: 600;
         line-height: 33.6px;
         color: #ffffff;
@@ -155,7 +155,10 @@
         display: flex;
         width: 100%;
         margin: 24px 0;
-          justify-content: flex-end;
+        justify-content: flex-end;
+        h2 {
+          text-align: end;
+        }
         .img_view {
           position: relative;
           width: 70px;
@@ -183,12 +186,12 @@
           }
         }
         .text_align {
-                  font-size: 15px;
-                    line-height: 21px;
-                    font-weight: 600;
-                    color: #b9c5d1;
-                    margin: 4px 0;
-                    text-align: right;
+          font-size: 15px;
+          line-height: 21px;
+          font-weight: 600;
+          color: #b9c5d1;
+          margin: 4px 0;
+          text-align: right;
         }
       }
     }
