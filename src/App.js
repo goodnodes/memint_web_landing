@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Header from "./components/Header";
 import Explore from "./pages/Explore";
 import About from "./pages/About";

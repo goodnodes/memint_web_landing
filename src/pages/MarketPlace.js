@@ -1,6 +1,6 @@
 // import axios from "axios";
 import { useState } from "react";
-import { handleBirth } from "../assets/Functions";
+import { handleBirth, handleDateInFormat } from "../assets/Functions";
 import "./MarketPlace.css";
 
 function MarketPlace({ engMode, marketRef }) {
@@ -225,7 +225,7 @@ function Box({ data }) {
               marginBottom: 3,
               marginTop: 5,
               marginLeft: "15px",
-              maxWidth: "80%",
+              maxWidth: "90%",
               overflowWrap: "break-word",
               fontFamily: "mechanical",
               fontWeight: "400",
@@ -248,7 +248,7 @@ function Box({ data }) {
         >
           {data.meetingInfo.region} | {data.meetingInfo.peopleNum}:
           {data.meetingInfo.peopleNum} | {handleBirth(data.hostInfo.age)} |{" "}
-          {data.meetingInfo.meetDate}
+          {handleDateInFormat(data.meetingInfo.meetDate)}
           <br />
           {data.meetingInfo.meetingTags.length > 0 &&
             data.meetingInfo.meetingTags.reduce((acc, cur) => {

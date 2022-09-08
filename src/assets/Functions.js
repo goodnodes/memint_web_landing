@@ -6,8 +6,9 @@ export const handleDate = (obj) => {
 };
 
 export const handleDateInFormat = (obj) => {
-  const day = obj.toDate().getDay();
-  const date = obj.toDate().toLocaleString();
+  const strToDate = new Date(obj)
+  const day = strToDate.getDay();
+  const date =strToDate.toISOString();
   let str = "";
   // eslint-disable-next-line default-case
   switch (day) {
@@ -32,17 +33,11 @@ export const handleDateInFormat = (obj) => {
     case 6:
       str = "토";
   }
-  if (date.length === 22) {
-    return `${date.slice(5, 7)}월 ${date.slice(9, 10)}일(${str}) ${date.slice(
-      12,
-      -6
-    )}시`;
-  } else {
-    return `${date.slice(5, 7)}월 ${date.slice(9, 11)}일(${str}) ${date.slice(
-      13,
-      -6
-    )}시`;
-  }
+    return `${date.slice(5, 7)}월 ${date.slice(8, 10)}일(${str}) ${date.slice(
+      11,
+      13
+    )}시 ${date.slice(14,16)}분`;
+
 };
 
 export const handleDateFromNow = (obj) => {
