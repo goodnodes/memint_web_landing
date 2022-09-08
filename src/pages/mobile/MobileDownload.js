@@ -1,14 +1,18 @@
-import React from 'react'
-import './MobileDownload.scss'
+import React from "react";
+import "./MobileDownload.scss";
 
-function MobileDownload({engMode}) {
+function MobileDownload({ engMode }) {
   return (
-    <div id='mobile_download'>
-      <div className='download_title'>DOWNLOADS</div>
-      <img src='icon/appstore.png' alt='appstore'/>
-      <img src='icon/playstore.png' alt='playstore'/>
+    <div id="mobile_download">
+      <div className="download_title">DOWNLOADS</div>
+
+      <img
+        src="icon/appstore-en.png"
+        alt="appstore"
+      />
+      <img src="icon/playstore.png" alt="playstore" />
     </div>
-  )
+  );
 }
 
-export default MobileDownload
+export default MobileDownload;

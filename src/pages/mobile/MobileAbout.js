@@ -9,17 +9,18 @@ function MobileAbout({ engMode }) {
           <span>STEP 1</span>
           <div>
             {engMode
-              ? "Join any group datings"
+              ? "Join any group datings or"
               : "원하는 미팅에 참여하세요. 또는"}
             <br />
             {engMode
-              ? "or you can make your own group dating"
+              ? "you can make your own group dating"
               : "새로운 미팅을 만들어 직접 주선해보아요!"}
           </div>
         </div>
         <img
           src={engMode ? "icon/meetingmeta-en.png" : "icon/meetingmeta.png"}
           alt="meeting"
+          id="meetingmeta"
         />
       </div>
       <div className="box">
@@ -31,11 +32,11 @@ function MobileAbout({ engMode }) {
               : "매칭된 미팅메이트들과 대화를 나누세요!"}
           </div>
         </div>
-        <img
-          id="chat"
-          src={engMode ? "icon/chat-en.png" : "icon/chat.png"}
-          alt="chat"
-        />
+        {engMode ? (
+          <img id="chat-en" src="icon/chat-en.png" alt="chat" />
+        ) : (
+          <img id="chat" src="icon/chat.png" alt="chat" />
+        )}
       </div>
       <div className="box">
         <div className="box_title">

@@ -11,14 +11,11 @@ function MobileMeetingElement({ meeting }) {
         </div>
         <div className="meetingTitle">{meeting.meetingInfo.title} </div>
         <div className="meetingInfo">
-          <span>{meeting.meetingInfo.region}</span>
-          <div className="bar" />
+          <span>{meeting.meetingInfo.region} |&nbsp;</span>
           <span>
-            {meeting.meetingInfo.peopleNum}:{meeting.meetingInfo.peopleNum}
+            {meeting.meetingInfo.peopleNum}:{meeting.meetingInfo.peopleNum} |&nbsp;
           </span>
-          <div className="bar" />
-          <span>{handleBirth(meeting.hostInfo.age)}</span>
-          <div className="bar" />
+          <span>{handleBirth(meeting.hostInfo.age)} |&nbsp;</span>
           <span>{handleDateInFormat(meeting.meetingInfo.meetDate)}</span>
         </div>
         <div className="meetingTags">
