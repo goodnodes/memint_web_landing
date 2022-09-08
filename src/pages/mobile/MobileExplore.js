@@ -21,8 +21,8 @@ function MobileExplore({ engMode }) {
       </div>
       <div className="comming_soon">COMING SOON!</div>
       <div className="download">
-        <img id="arrow" src="icon/arrow.png" alt='arrow'/>
-        <img id="egg" src="icon/egg.png" alt='egg'/>
+        <img id="arrow" src="icon/arrow.png" alt="arrow" />
+        <img id="egg" src="icon/egg.png" alt="egg" />
       </div>
       <div className="desc2">
         {engMode ? (

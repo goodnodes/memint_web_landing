@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+// import axios from "axios";
+import React, {useState } from "react";
 import MobileMeetingElement from "../../components/mobile/MobileMeetingElement";
 import "./MobileMarketPlace.scss";
 
@@ -97,7 +97,7 @@ function MobileMarketPlace({ engMode }) {
       },
     },
   ];
-  const [meetings, setMeetings] = useState(dummy);
+  const [meetings] = useState(dummy);
 
   // useEffect(() => {
   //   axios.get("https://memint-app-server.herokuapp.com/web").then((el) => {
