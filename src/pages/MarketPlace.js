@@ -14,7 +14,7 @@ function MarketPlace({ engMode, marketRef }) {
       meetingInfo: {
         title: "혜화에서 같이 연극 보실 분!",
         peopleNum: 1,
-        meetingTags: ["조용한 분위기 원해요", "취미"],
+        meetingTags: ["연애", "취미"],
         region: "혜화",
         meetDate: "2022-09-09T18:30:00.000Z",
       },
@@ -75,7 +75,7 @@ function MarketPlace({ engMode, marketRef }) {
       meetingInfo: {
         title: "20대 직장인입니다! 좋은 인연 만들어요😍😍",
         peopleNum: 2,
-        meetingTags: ["소맥", "취미", "음악", "연애"],
+        meetingTags: ["소맥", "취미", "연애"],
         region: "강남",
         meetDate: "2022-09-21T19:30:00.000Z",
       },
