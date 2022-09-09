@@ -203,7 +203,12 @@ function Box({ data }) {
             paddingRight: "15px",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center" }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <img
               alt="profile"
               src={data.hostInfo.profile}
@@ -217,39 +222,22 @@ function Box({ data }) {
               {data.hostInfo.nickName}
             </p>
           </div>
-          {/* <img src="icon/foot.png" alt="foot" /> */}
+          <img src="icon/foot.png" alt="foot" />
         </div>
-        <div style={{ height: "40px" }}>
-          <p
-            style={{
-              marginBottom: 3,
-              marginTop: 5,
-              marginLeft: "15px",
-              maxWidth: "90%",
-              overflowWrap: "break-word",
-              fontFamily: "mechanical",
-              fontWeight: "400",
-              fontSize: "16px",
-            }}
-          >
-            {data.meetingInfo.title}
-          </p>
-        </div>
-        <p
+        <div
           style={{
-            marginLeft: "15px",
-            marginTop: 0,
-            marginBottom: 0,
-            lineHeight: "18px",
-            maxWidth: "90%",
-            fontSize: "14px",
-            color: "#3C3D43",
+            height: "40px",
+            paddingBottom: "8px",
           }}
         >
+          <p className="marketTitle">{data.meetingInfo.title}</p>
+        </div>
+        <p className="marketDesc" style={{}}>
           {data.meetingInfo.region} | {data.meetingInfo.peopleNum}:
           {data.meetingInfo.peopleNum} | {handleBirth(data.hostInfo.age)} |{" "}
           {handleDateInFormat(data.meetingInfo.meetDate)}
-          <br />
+        </p>
+        <p className="marketDesc ">
           {data.meetingInfo.meetingTags.length > 0 &&
             data.meetingInfo.meetingTags.reduce((acc, cur) => {
               return `${acc} #${cur}`;
@@ -271,7 +259,7 @@ function Box({ data }) {
           justifyContent: "center",
         }}
       >
-        <p>함께하기</p>
+        <p style={{ fontSize: "90%" }}>함께하기</p>
         <img
           src="icon/triangle.png"
           alt="triangle"

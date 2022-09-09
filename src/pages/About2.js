@@ -50,7 +50,7 @@ function About2({ engMode }) {
               <img
                 src="icon/avatar.png"
                 alt="avatar"
-                style={{ width: "80%" }}
+                style={{ width: "67%" }}
               />
             </div>
           </div>
@@ -166,7 +166,7 @@ function About2({ engMode }) {
             }}
           >
             {engMode ? (
-              <>
+              <div style={{ marginRight: "10%" }}>
                 {/* <h3 style={{ color: "white" }}>Who is the member?</h3> */}
                 <h1 style={{ marginTop: -10, color: "white" }}>
                   Unveil Profile Image
@@ -174,9 +174,9 @@ function About2({ engMode }) {
                 <h1 style={{ marginTop: -20, color: "white" }}>
                   with Spending TING
                 </h1>
-              </>
+              </div>
             ) : (
-              <>
+              <div style={{ marginRight: "10%" }}>
                 <h3 style={{ color: "white" }}>
                   어떤 사람이 미팅하는지 궁금해!
                 </h3>
@@ -184,12 +184,12 @@ function About2({ engMode }) {
                 <h1 style={{ marginTop: -20, color: "white" }}>
                   프로필 이미지 확인
                 </h1>
-              </>
+              </div>
             )}
             <img
               src="icon/profile.png"
               alt="profile"
-              style={{ width: "80%" }}
+              style={{ width: "67%" }}
             />
           </div>
         </div>

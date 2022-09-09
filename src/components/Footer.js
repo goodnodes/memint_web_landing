@@ -20,7 +20,7 @@ function Footer() {
       >
         <p style={{ color: "gray" }}>© 2022 GOODNODES</p>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <img src="icon/mail.png" alt="mail" style={{ width: '16.67px' }} />
+          <img src="icon/mail.png" alt="mail" style={{ width: "80%" }} />
           {/* <img
             src="icon/instagram.png"
             alt="instagram"

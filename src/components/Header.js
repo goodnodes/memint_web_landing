@@ -12,7 +12,7 @@ function Header({ onClick, engMode, setEngMode }) {
       />
       <div
         style={{
-          width: "50%",
+          width: "80%",
           display: "flex",
           justifyContent: "flex-end",
           paddingRight: "10%",

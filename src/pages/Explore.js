@@ -64,10 +64,10 @@ function Explore({ engMode }) {
       <div className="desc">
         <img
           alt="dinowitheggs"
-          src="icon/dinowitheggs.png"
-          style={{ height: "80%", marginRight: "60px" }}
+          src="icon/dino.png"
+          style={{ height: "60%", marginRight: "60px" }}
         />
-        <div className="textbox" style={{ marginTop: "14%" }}>
+        <div className="textbox" style={{ marginTop: "23%" }}>
           {engMode ? (
             <h1 style={{ color: "#58FF7D", marginTop: "6%" }}>
               WHAT IS MEMINT
