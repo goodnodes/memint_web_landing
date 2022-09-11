@@ -2,6 +2,19 @@
   height: 170vh;
   display: flex;
   flex-direction: column;
+  margin-top: 9vh;
+
+  .ment {
+    margin-top: 90px;
+      h1 {
+          font-size: 30px;
+          font-weight: 600;
+          line-height: 140%;
+          color: #ffffff;
+          margin: 0;
+        }
+  }
+
 }
 .ment {
   flex: 1;
@@ -17,6 +30,14 @@
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
+
+  h1 {
+    color: #ffffff;
+    font-family: 'mechanical-en';
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 160px;
+  }
 }
 .desc {
   flex: 1.8;

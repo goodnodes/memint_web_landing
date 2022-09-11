@@ -1,36 +1,19 @@
-import "./Explore.css";
+import "./Explore.scss";
 
 function Explore({ engMode }) {
   return (
     <div className="Explore">
       <div className="ment">
         {engMode ? (
-          <h1
-            style={{
-              marginTop: "6%",
-              textAlign: "center",
-              lineHeight: "50px",
-              fontFamily: "mechanical-en",
-              fontWeight: "400",
-              color: "white",
-            }}
-          >
-            Join, Chat, Date <br /> and Earn
-          </h1>
+          <>
+            <h1>Join, Chat, Date </h1>
+            <h1>and Earn</h1>
+          </>
         ) : (
-          <h1
-            style={{
-              marginTop: "6%",
-              textAlign: "center",
-              lineHeight: "50px",
-              fontFamily: "mechanical",
-              fontWeight: "400",
-              color: "white",
-            }}
-          >
-            즐거운 저녁을 함께할 친구를
-            <br /> 찾는 가장 좋은 방법?
-          </h1>
+          <>
+            <h1>즐거운 저녁을 함께할 친구를</h1>
+            <h1>찾는 가장 좋은 방법?</h1>
+          </>
         )}
         {engMode ? (
           <h2 style={{ color: "#AAEFC1", fontWeight: 400 }}>
@@ -49,7 +32,8 @@ function Explore({ engMode }) {
             fontFamily: "mechanical-en",
             fontSize: "40px",
             fontWeight: "400",
-            marginTop: "4%",
+            marginTop: "10%",
+            marginBottom:'5%'
           }}
         >
           COMING SOON!

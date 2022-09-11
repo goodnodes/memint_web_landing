@@ -6,7 +6,8 @@ function Footer() {
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "black",
+        // backgroundColor: "black",
+        marginTop: 'auto'
       }}
     >
       <div

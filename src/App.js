@@ -1,21 +1,15 @@
 import { useRef, useState } from "react";
 import "./App.scss";
 import Header from "./components/Header";
-import Explore from "./pages/Explore";
-import About from "./pages/About";
-import About2 from "./pages/About2";
-import Roadmap from "./pages/Roadmap";
-import MarketPlace from "./pages/MarketPlace";
-import Download from "./pages/Download";
 import Footer from "./components/Footer";
-import background from "./assets/background.png";
 import { useMediaQuery } from "react-responsive";
 import MobileHeader from "./components/mobile/MobileHeader";
-import MobileExplore from "./pages/mobile/MobileExplore";
-import MobileAbout from "./pages/mobile/MobileAbout";
-import MobileRoadmap from "./pages/mobile/MobileRoadmap";
-import MobileMarketPlace from "./pages/mobile/MobileMarketPlace";
-import MobileDownload from "./pages/mobile/MobileDownload";
+import MobileClosedBeta from "./pages/mobile/MobileClosedBeta";
+import ClosedBeta from "./pages/ClosedBeta";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import MobileMain from "./pages/mobile/MobileMain";
 
 function App() {
   const [engMode, setEngMode] = useState(true);
@@ -25,11 +19,8 @@ function App() {
   const marketplaceRef = useRef();
   const downloadRef = useRef();
 
-    const isMobileTablet = useMediaQuery({
-    query: "(max-width: 1023px)",
-  });
   const isMobile = useMediaQuery({
-    query: "(max-width: 767px)",
+    query: "(max-width: 500px)",
   });
 
   const handlePageMove = (text) => {
@@ -67,39 +58,45 @@ function App() {
   };
   return (
     <div>
-      {isMobile || isMobileTablet ? (
+      {isMobile ? (
         <div className="mobile_wrapper">
           <MobileHeader setEngMode={setEngMode} engMode={engMode} />
           <div className="safe_header" />
-          <MobileExplore engMode={engMode} />
-          <MobileAbout engMode={engMode} />
-          <MobileRoadmap engMode={engMode} />
-          <MobileMarketPlace engMode={engMode} />
-          <MobileDownload engMode={engMode} />
+          <Routes>
+            <Route path="/" element={<MobileMain engMode={engMode} />} />
+            <Route
+              path="closed-beta"
+              element={<MobileClosedBeta engMode={engMode} />}
+            />
+          </Routes>
+
           <Footer />
         </div>
       ) : (
-        <div
-          ref={outerDivRef}
-          className="outer"
-          style={{
-            backgroundImage: `url(${background})`,
-            backgroundAttachment: "local",
-            backgroundSize: "cover",
-          }}
-        >
+        <div ref={outerDivRef} className="outer">
           <Header
             onClick={handlePageMove}
             setEngMode={setEngMode}
             engMode={engMode}
           />
           <div style={{ height: "9vh" }}></div>
-          <Explore engMode={engMode} />
-          <About aboutRef={aboutRef} engMode={engMode} />
-          <About2 engMode={engMode} />
-          <Roadmap roadmapRef={roadmapRef} engMode={engMode} />
-          <MarketPlace marketRef={marketplaceRef} engMode={engMode} />
-          <Download downloadRef={downloadRef} engMode={engMode} />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  engMode={engMode}
+                  aboutRef={aboutRef}
+                  roadmapRef={roadmapRef}
+                  marketplaceRef={marketplaceRef}
+                  downloadRef={downloadRef}
+                />
+              }
+            />
+            <Route path="closed-beta" element={<ClosedBeta />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+
           <Footer />
         </div>
       )}
