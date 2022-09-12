@@ -1,4 +1,4 @@
-import "./Download.css";
+import "./Download.scss";
 
 function Download({ engMode, downloadRef }) {
   return (

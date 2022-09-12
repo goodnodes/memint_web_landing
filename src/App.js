@@ -79,7 +79,6 @@ function App() {
             setEngMode={setEngMode}
             engMode={engMode}
           />
-          <div style={{ height: "9vh" }}></div>
           <Routes>
             <Route
               path="/"

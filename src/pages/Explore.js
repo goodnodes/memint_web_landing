@@ -27,14 +27,7 @@ function Explore({ engMode }) {
       </div>
       <div className="download">
         <h1
-          style={{
-            color: "white",
-            fontFamily: "mechanical-en",
-            fontSize: "40px",
-            fontWeight: "400",
-            marginTop: "10%",
-            marginBottom:'5%'
-          }}
+
         >
           COMING SOON!
         </h1>
@@ -46,12 +39,14 @@ function Explore({ engMode }) {
         />
       </div>
       <div className="desc">
+        <div className="imgbox">
         <img
           alt="dinowitheggs"
           src="icon/dino.png"
-          style={{ height: "60%", marginRight: "60px" }}
         />
-        <div className="textbox" style={{ marginTop: "23%" }}>
+        </div>
+
+        <div className="textbox">
           {engMode ? (
             <h1 style={{ color: "#58FF7D", marginTop: "6%" }}>
               WHAT IS MEMINT

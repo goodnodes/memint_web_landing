@@ -8,12 +8,12 @@ function MobileClosedBeta() {
         <h1>미팅하고 싶은 사람 모여라!</h1>
         <img src="icon/memint-example.png" id="app_example" alt="app_example" />
       </div>
-      <div className="section">
+      <div className="section1">
         <h2>MEMINT 클로즈베타 테스터 모집</h2>
         <div className="desc_container">
           <div className="desc">
-            <h4>미팅 플랫폼 앱 Memint를 런칭하기 전</h4>
-            <h4>앱을 체험해보실 테스터분들을 모집합니다.</h4>
+            <h4><b>미팅 플랫폼 앱 Memint를 런칭하기 전</b></h4>
+            <h4><b>앱을 체험해보실 테스터분들을 모집합니다.</b></h4>
           </div>
           <div className="desc">
             <h4>새로운 친구를 만나 즐겁게 놀 수 있는 미팅!</h4>

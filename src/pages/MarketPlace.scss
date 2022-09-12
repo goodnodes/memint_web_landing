@@ -1,0 +1,165 @@
+.Marketplace {
+  margin-top: 313px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    font-size: 48px;
+    line-height: 67.2px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 40px 0;
+  }
+
+  h3 {
+    font-family: "mechanical-en";
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    margin: 100px 0 0 0;
+  }
+
+  .meetingmetas {
+    max-width: 1190px;
+    min-width: 1070px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .wrapper {
+      width: 350px;
+      height: 209px;
+      position: relative;
+      margin-bottom: 8px;
+
+      .card {
+        width: 350px;
+        height: 196px;
+        background-color: #eaffefcc;
+        border-radius: 30px;
+        padding: 31px 25px;
+
+        .user {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 999px;
+            margin-right: 8px;
+          }
+
+          span {
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 140%;
+          }
+        }
+
+        .meetingTitle {
+          height: 44px;
+          font-family: "mechanical";
+          font-size: 16px;
+          line-height: 22.4px;
+          letter-spacing: -0.5px;
+          margin-bottom: 14px;
+        }
+
+        .meetingInfo {
+          display: flex;
+          align-items: center;
+
+          span {
+            font-size: 13px;
+            line-height: 140%;
+            font-weight: 500;
+            color: #3c3d43;
+          }
+
+          .bar {
+            width: 0.8px;
+            height: 9px;
+            background-color: #3c3d43;
+            margin: 0 3px 0.8px 3px;
+          }
+        }
+
+        .meetingTags {
+          span {
+            color: #3c3d43;
+            font-size: 13px;
+            line-height: 18.2px;
+            letter-spacing: -0.5px;
+          }
+        }
+      }
+
+      button {
+        width: 113px;
+        height: 49px;
+        border-radius: 999px;
+        padding: 3px 10px 3px 13px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        box-shadow: 0px 4px 16px rgba(174, 255, 192, 0.5);
+        position: absolute;
+        right: 26px;
+        bottom: 0px;
+
+        span {
+          color: #3c3d43;
+          font-size: 16px;
+          line-height: 22.4px;
+          font-weight: 600;
+          letter-spacing: -0.5px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+// .marketTitle {
+//   margin-bottom: 3;
+//   margin-top: 10px;
+//   margin-left: 15px;
+//   max-width: 90%;
+//   font-family: mechanical;
+//   font-weight: 400;
+//   font-size: 16px;
+//   display: -webkit-box;
+//   text-overflow: ellipsis;
+//   -webkit-line-clamp: 2;
+//   overflow: hidden;
+//   -webkit-box-orient: vertical;
+// }
+
+// .marketDesc {
+//   margin-left: 15px;
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   line-height: 18px;
+//   max-width: 90%;
+//   font-size: 14px;
+//   color: #3c3d43;
+//   display: -webkit-box;
+//   text-overflow: ellipsis;
+//   -webkit-line-clamp: 1;
+//   overflow: hidden;
+//   -webkit-box-orient: vertical;
+// }
+
+/* marginLeft: "15px",
+            marginTop: 0,
+            marginBottom: 0,
+            lineHeight: "18px",
+            maxWidth: "90%",
+            fontSize: "14px",
+            color: "#3C3D43", */

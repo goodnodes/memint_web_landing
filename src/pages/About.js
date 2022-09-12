@@ -1,4 +1,4 @@
-import "./About.css";
+import "./About.scss";
 
 function About({ engMode, aboutRef }) {
   return (
@@ -18,40 +18,31 @@ function About({ engMode, aboutRef }) {
           >
             퇴근 후에 뭐해?
             <br />
-            2:2 미팅 어때!
+            <span>2:2 미팅&nbsp;</span>어때!
           </h1>
         )}
       </div>
       <div className="step1">
         <div className="transparentbox">
-          <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
-            step1
-          </h1>
-          <div style={{ display: "flex", flex: 1 }}>
+          <h1>step1</h1>
+          <div className="content">
             {engMode ? (
               <img
                 src="icon/meetingmeta-en.png"
                 alt="meetingmeta-en"
-                style={{ height: "50%" }}
+                id="meetingmeta"
               />
             ) : (
               <img
                 src="icon/meetingmeta.png"
                 alt="meetingmeta"
-                style={{ height: "50%" }}
+                id="meetingmeta"
               />
             )}
-            <div style={{ marginLeft: 40, flex: 1 }}>
+            <div className="text">
               {engMode ? (
                 <>
-                  <h2
-                    style={{
-                      marginTop: 6,
-                      color: "white",
-                      fontWeight: "400",
-                      lineHeight: "30px",
-                    }}
-                  >
+                  <h2>
                     Join any group datings
                     <br />
                     or you can make your
@@ -64,14 +55,7 @@ function About({ engMode, aboutRef }) {
                 </>
               ) : (
                 <>
-                  <h2
-                    style={{
-                      marginTop: 6,
-                      color: "white",
-                      fontWeight: "400",
-                      lineHeight: "30px",
-                    }}
-                  >
+                  <h2>
                     원하는 미팅에 참여하세요.
                     <br />
                     또는 새로운 미팅을 만들어
@@ -88,30 +72,12 @@ function About({ engMode, aboutRef }) {
         </div>
       </div>
       <div className="step2">
-        <div
-          className="transparentbox"
-          style={{ paddingRight: "6%", width: "40%", alignItems: "center" }}
-        >
-          <div
-            style={{
-              display: "flex",
-              flex: 1,
-              width: "77%",
-            }}
-          >
-            <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
-              step2
-            </h1>
+        <div className="transparentbox">
+          <div className="step2_title">
+            <h1>step2</h1>
             {engMode ? (
               <>
-                <h2
-                  style={{
-                    marginLeft: "6%",
-                    color: "white",
-                    fontWeight: "400",
-                    lineHeight: "30px",
-                  }}
-                >
+                <h2>
                   Chat with firends
                   <br />
                   before dating
@@ -119,14 +85,7 @@ function About({ engMode, aboutRef }) {
               </>
             ) : (
               <>
-                <h2
-                  style={{
-                    marginLeft: "6%",
-                    color: "white",
-                    fontWeight: "400",
-                    lineHeight: "30px",
-                  }}
-                >
+                <h2>
                   매칭된 미팅메이트들과
                   <br />
                   대화를 나누세요!
@@ -136,70 +95,41 @@ function About({ engMode, aboutRef }) {
           </div>
           <div>
             {engMode ? (
-              <img
-                src="icon/chat-en.png"
-                alt="chat-en"
-                style={{ height: "60%" }}
-              />
+              <img src="icon/chat-en.png" alt="chat-en" />
             ) : (
-              <img src="icon/chat.png" alt="chat" style={{ height: "60%" }} />
+              <img src="icon/chat.png" alt="chat" />
             )}
           </div>
         </div>
       </div>
       <div className="step3">
-        <div
-          className="transparentbox"
-          style={{ paddingRight: "6%", width: "40%" }}
-        >
-          <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
-            step3
-          </h1>
-          <div
-            style={{
-              display: "flex",
-              flex: 1,
-            }}
-          >
+        <div className="transparentbox">
+          <h1>step3</h1>
+          <div className="content">
             <div style={{ borderRadius: "15px" }}>
               {engMode ? (
-                <img
-                  src="icon/verify-en.png"
-                  alt="verify-en"
-                  style={{ height: "60%" }}
-                />
+                <img src="icon/verify-en.png" alt="verify-en" />
               ) : (
-                <img
-                  src="icon/verify.png"
-                  alt="verify"
-                  style={{ height: "60%" }}
-                />
+                <img src="icon/verify.png" alt="verify" />
               )}
             </div>
-            <div style={{ marginLeft: 20, flex: 1 }}>
+            <div className="text">
               {engMode ? (
                 <img
                   src="icon/verifybutton-en.png"
                   alt="verifybutton-en"
-                  style={{ height: "13%", marginLeft: "-20px" }}
+                  className="verify-button"
                 />
               ) : (
                 <img
                   src="icon/verifybutton.png"
                   alt="verifybutton"
-                  style={{ height: "13%", marginLeft: "-20px" }}
+                  className="verify-button"
                 />
               )}
               {engMode ? (
                 <>
-                  <h2
-                    style={{
-                      marginTop: "-11px",
-                      color: "white",
-                      fontWeight: "400",
-                      lineHeight: "30px",
-                    }}
-                  >
+                  <h2>
                     Meet Friends
                     <br />
                     and upload selfie
@@ -209,14 +139,7 @@ function About({ engMode, aboutRef }) {
                 </>
               ) : (
                 <>
-                  <h2
-                    style={{
-                      marginTop: "-11px",
-                      color: "white",
-                      fontWeight: "400",
-                      lineHeight: "30px",
-                    }}
-                  >
+                  <h2>
                     새로운 친구들과의
                     <br />
                     만남을 즐겨보세요
@@ -233,42 +156,16 @@ function About({ engMode, aboutRef }) {
         </div>
       </div>
       <div className="step4">
-        <div
-          className="transparentbox"
-          style={{ paddingRight: "6%", width: "40%", alignItems: "center" }}
-        >
-          <div
-            style={{
-              display: "flex",
-              width: "77%",
-            }}
-          >
-            <h1 style={{ fontFamily: "mechanical-en", color: "#AEFFC1" }}>
-              step4
-            </h1>
+        <div className="transparentbox">
+          <div className="step4_title">
+            <h1>step4</h1>
             {engMode ? (
               <>
-                <h2
-                  style={{
-                    marginLeft: "6%",
-                    color: "white",
-                    fontWeight: "400",
-                    lineHeight: "30px",
-                  }}
-                >
-                  Get TINGs!
-                </h2>
+                <h2>Get TINGs!</h2>
               </>
             ) : (
               <>
-                <h2
-                  style={{
-                    marginLeft: "6%",
-                    color: "white",
-                    fontWeight: "400",
-                    lineHeight: "30px",
-                  }}
-                >
+                <h2>
                   미팅에 성실히 임한 당신,
                   <br />
                   TING으로 보상 받으세요!
@@ -276,53 +173,10 @@ function About({ engMode, aboutRef }) {
               </>
             )}
           </div>
-          <div
-            style={{
-              display: "flex",
-              flex: 1,
-              width: "77%",
-            }}
-          >
-            <div style={{ flex: 1, marginRight: "30px" }}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                }}
-              >
-                <img
-                  src="icon/smallcoin.png"
-                  alt="smallcoin"
-                  style={{ width: "35%" }}
-                />
-              </div>
-              <div
-                style={{
-                  flex: 1,
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "flex-end",
-                }}
-              >
-                <h1
-                  style={{
-                    fontSize: 60,
-                    color: "white",
-                    fontFamily: "mechanical-en",
-                    fontWeight: "400",
-                  }}
-                >
-                  TING
-                </h1>
-              </div>
-            </div>
-            <div style={{ flex: 1 }}>
-              <img
-                src="icon/bigcoin.png"
-                alt="bigcoin"
-                style={{ width: "180px", height: "180px" }}
-              />
-            </div>
+          <div className="content">
+            <img src="icon/smallcoin.png" alt="smallcoin" id="smallcoin" />
+            <h1>TING</h1>
+            <img src="icon/bigcoin.png" alt="bigcoin" id="bigcoin" />
           </div>
         </div>
       </div>

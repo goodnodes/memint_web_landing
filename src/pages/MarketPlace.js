@@ -1,7 +1,7 @@
 // import axios from "axios";
 import { useState } from "react";
 import { handleBirth, handleDateInFormat } from "../assets/Functions";
-import "./MarketPlace.css";
+import "./MarketPlace.scss";
 
 function MarketPlace({ engMode, marketRef }) {
   // const pageHeight = window.innerHeight;
@@ -110,162 +110,60 @@ function MarketPlace({ engMode, marketRef }) {
   // }, []);
   return (
     <div className="Marketplace" ref={marketRef}>
-      <div
-        style={{
-          width: "86%",
-          height: "80%",
-          display: "flex",
-          flexDirection: "column ",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
-        {engMode ? (
-          <h1 style={{ color: "white" }}>Explore Group Meeting</h1>
-        ) : (
-          <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
-        )}
-        <div
-          style={{
-            width: "90%",
-            height: "80%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          {meetings && <Meetingmeta data={meetings.slice(0, 3)} />}
-          {meetings && <Meetingmeta data={meetings.slice(3)} />}
-        </div>
-        <img
-          src="icon/exclamationmark.png"
-          alt="exclamationmark"
-          style={{ height: "12%", position: "absolute", right: 19, top: 0 }}
-        />
+      {engMode ? (
+        <h1 style={{ color: "white" }}>Explore Group Meeting</h1>
+      ) : (
+        <h1 style={{ color: "white" }}>지금 난리 난 인기 미팅</h1>
+      )}
+      <div className="meetingmetas">
+        {meetings && meetings.map((el, idx) => {
+          return <Box key={idx} meeting={el} />
+        })}
+        {/* {meetings && <Meetingmeta data={meetings.slice(0, 3)} />}
+        {meetings && <Meetingmeta data={meetings.slice(3)} />} */}
       </div>
-      <h3
-        style={{
-          position: "absolute",
-          bottom: "2%",
-          color: "white",
-          fontFamily: "mechanical-en",
-        }}
-      >
-        SEE MORE
-      </h3>
+      <img
+        src="icon/exclamationmark.png"
+        alt="exclamationmark"
+        style={{ height: "12%", position: "absolute", right: 19, top: 0 }}
+      />
+      <h3>SEE MORE</h3>
     </div>
   );
 }
 
-function Meetingmeta({ data }) {
+function Box({ meeting }) {
   return (
-    <div
-      style={{
-        width: "95%",
-        height: "46%",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
-      <Box data={data[0]} />
-      <Box data={data[1]} />
-      <Box data={data[2]} />
-    </div>
-  );
-}
-
-function Box({ data }) {
-  return (
-    <div
-      style={{
-        width: "30%",
-        height: "82%",
-        display: "flex",
-        alignItems: "flex-start",
-        position: "relative",
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: "#BBCCBF",
-          borderRadius: "20px",
-          width: "100%",
-          height: "87%",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            flex: 1,
-            marginTop: "25px",
-            paddingLeft: "15px",
-            paddingRight: "15px",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <img
-              alt="profile"
-              src={data.hostInfo.profile}
-              style={{
-                width: "30px",
-                height: "30px",
-                borderRadius: 15,
-              }}
-            />
-            <p style={{ marginTop: 0, marginBottom: 0, marginLeft: "6px" }}>
-              {data.hostInfo.nickName}
-            </p>
-          </div>
-          <img src="icon/foot.png" alt="foot" />
+<div className="wrapper">
+      <div className="card">
+        <div className="user">
+          <img src={meeting.hostInfo.profile} alt="host" />
+          <span>{meeting.hostInfo.nickName}</span>
         </div>
-        <div
-          style={{
-            height: "40px",
-            paddingBottom: "8px",
-          }}
-        >
-          <p className="marketTitle">{data.meetingInfo.title}</p>
+        <div className="meetingTitle">{meeting.meetingInfo.title} </div>
+        <div className="meetingInfo">
+          <span>{meeting.meetingInfo.region} |&nbsp;</span>
+          <span>
+            {meeting.meetingInfo.peopleNum}:{meeting.meetingInfo.peopleNum} |&nbsp;
+          </span>
+          <span>{handleBirth(meeting.hostInfo.age)} |&nbsp;</span>
+          <span>{handleDateInFormat(meeting.meetingInfo.meetDate)}</span>
         </div>
-        <p className="marketDesc" style={{}}>
-          {data.meetingInfo.region} | {data.meetingInfo.peopleNum}:
-          {data.meetingInfo.peopleNum} | {handleBirth(data.hostInfo.age)} |{" "}
-          {handleDateInFormat(data.meetingInfo.meetDate)}
-        </p>
-        <p className="marketDesc ">
-          {data.meetingInfo.meetingTags.length > 0 &&
-            data.meetingInfo.meetingTags.reduce((acc, cur) => {
-              return `${acc} #${cur}`;
-            }, [])}
-        </p>
-        {/* &nbsp; */}
+        <div className="meetingTags">
+          <span>
+            {meeting.meetingInfo.meetingTags?.reduce((acc, cur) => {
+              if (acc.length > 24) {
+                return acc;
+              }
+              return acc + "#" + cur + " ";
+            }, "")}
+          </span>
+        </div>
       </div>
-      <div
-        style={{
-          height: "21%",
-          width: "30%",
-          backgroundColor: "white",
-          position: "absolute",
-          bottom: 10,
-          right: "23px",
-          borderRadius: 26,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <p style={{ fontSize: "90%" }}>함께하기</p>
-        <img
-          src="icon/triangle.png"
-          alt="triangle"
-          style={{ marginLeft: "5px" }}
-        />
-      </div>
+      <button>
+        <span>함께하기</span>
+        <img src="icon/triangle.png" alt="play" />
+      </button>
     </div>
   );
 }

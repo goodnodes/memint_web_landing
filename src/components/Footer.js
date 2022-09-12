@@ -14,7 +14,7 @@ function Footer() {
         style={{
           height: "100%",
           display: "flex",
-          width: "70%",
+          width: "90%",
           justifyContent: "space-between",
           alignItems: "center",
         }}
