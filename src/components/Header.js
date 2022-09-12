@@ -155,13 +155,21 @@ function Header({ onClick, engMode, setEngMode }) {
               onClick={() => {
                 onClick("ClosedBeta");
               }}
-              style={{ cursor: "pointer" }}
+              id="closed-beta-button"
+              style={
+                isHovering === "ClosedBeta"
+                  ? { backgroundColor: "#3C3D43" }
+                  : null
+              }
             >
               <p
                 style={
                   isHovering === "ClosedBeta"
-                    ? { color: "#AAEFC1", fontWeight: "600" }
-                    : { color: "white", fontWeight: "600" }
+                    ? {
+                        color: "#AEFFC1",
+                        fontWeight: "600",
+                      }
+                    : { color: "#3C3D43", fontWeight: "600" }
                 }
               >
                 ClosedBeta

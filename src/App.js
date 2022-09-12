@@ -11,51 +11,51 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import MobileMain from "./pages/mobile/MobileMain";
 
-function App() {
+function App({route}) {
   const [engMode, setEngMode] = useState(true);
   const outerDivRef = useRef();
   const aboutRef = useRef();
   const roadmapRef = useRef();
   const marketplaceRef = useRef();
   const downloadRef = useRef();
-
   const isMobile = useMediaQuery({
-    query: "(max-width: 500px)",
+    query: "(max-width: 512px)",
   });
 
   const handlePageMove = (text) => {
     if (text === "Explore") {
       outerDivRef.current.scrollTo({
         top: 0,
-        legt: 0,
+        left: 0,
         behavior: "smooth",
       });
     } else if (text === "About") {
       outerDivRef.current.scrollTo({
         top: aboutRef.current.offsetTop - 100,
-        legt: 0,
+        left: 0,
         behavior: "smooth",
       });
     } else if (text === "Roadmap") {
       outerDivRef.current.scrollTo({
-        top: roadmapRef.current.offsetTop,
-        legt: 0,
+        top: roadmapRef.current.offsetTop-100,
+        left: 0,
         behavior: "smooth",
       });
     } else if (text === "Marketplace") {
       outerDivRef.current.scrollTo({
-        top: marketplaceRef.current.offsetTop,
-        legt: 0,
+        top: marketplaceRef.current.offsetTop-100,
+        left: 0,
         behavior: "smooth",
       });
     } else if (text === "Download") {
       outerDivRef.current.scrollTo({
-        top: downloadRef.current.offsetTop,
+        top: downloadRef.current.offsetTop-100,
         legt: 0,
         behavior: "smooth",
       });
     }
   };
+
   return (
     <div>
       {isMobile ? (
