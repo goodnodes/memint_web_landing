@@ -7,7 +7,7 @@ function Header({ onClick, engMode, setEngMode }) {
   return (
     <div className="Header">
       <Link to="/">
-        <img src="icon/logo.png" alt="logo" />
+        <img src="icon/MEMINT.png" alt="logo" />
       </Link>
 
       <div
@@ -172,7 +172,7 @@ function Header({ onClick, engMode, setEngMode }) {
                     : { color: "#3C3D43", fontWeight: "600" }
                 }
               >
-                ClosedBeta
+                Closed Beta
               </p>
             </div>
           </Link>

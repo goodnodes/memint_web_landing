@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div
       style={{
-        height: "10vh",
+        height: "100px",
         width: "100%",
         display: "flex",
         justifyContent: "center",
@@ -14,9 +14,10 @@ function Footer() {
         style={{
           height: "100%",
           display: "flex",
-          width: "90%",
+          width: "85%",
           justifyContent: "space-between",
           alignItems: "center",
+          paddingVertical: '10px'
         }}
       >
         <p style={{ color: "gray" }}>© 2022 GOODNODES</p>
