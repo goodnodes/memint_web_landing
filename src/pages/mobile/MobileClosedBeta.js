@@ -12,8 +12,12 @@ function MobileClosedBeta() {
         <h2>MEMINT 클로즈베타 테스터 모집</h2>
         <div className="desc_container">
           <div className="desc">
-            <h4><b>미팅 플랫폼 앱 Memint를 런칭하기 전</b></h4>
-            <h4><b>앱을 체험해보실 테스터분들을 모집합니다.</b></h4>
+            <h4>
+              <b>미팅 플랫폼 앱 Memint를 런칭하기 전</b>
+            </h4>
+            <h4>
+              <b>앱을 체험해보실 테스터분들을 모집합니다.</b>
+            </h4>
           </div>
           <div className="desc">
             <h4>새로운 친구를 만나 즐겁게 놀 수 있는 미팅!</h4>
@@ -83,7 +87,14 @@ function MobileClosedBeta() {
       </div>
       <div className="form-container">
         <img src="icon/leftarrow.png" alt="arrow" id="left-arrow" />
-        <button>구글폼 입력하기</button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfb-iOXmfgxonDTwroN4Rr-Dmv6Dt0yd-Zl46fVUN4nfLXJJA/viewform?usp=sf_link"
+          target="_blank"
+          title="MEMINT 클로즈베타 테스터 모집"
+          rel="noreferrer"
+        >
+          <button>구글폼 입력하기</button>
+        </a>
         <img src="icon/rightarrow.png" alt="arrow" id="right-arrow" />
       </div>
     </div>
