@@ -88,7 +88,7 @@ function ClosedBeta({ closedbetaRef }) {
           <div className="form-container">
             <img src="icon/leftarrow.png" alt="arrow" id="left-arrow" />
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfb-iOXmfgxonDTwroN4Rr-Dmv6Dt0yd-Zl46fVUN4nfLXJJA/viewform?usp=sf_link"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfb-iOXmfgxonDTwroN4Rr-Dmv6Dt0yd-Zl46fVUN4nfLXJJA/viewform"
               target="_blank"
               title="MEMINT 클로즈베타 테스터 모집"
               rel="noreferrer"
