@@ -11,7 +11,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import MobileMain from "./pages/mobile/MobileMain";
 
-function App({route}) {
+function App({ route }) {
   const [engMode, setEngMode] = useState(true);
   const outerDivRef = useRef();
   const aboutRef = useRef();
@@ -37,19 +37,19 @@ function App({route}) {
       });
     } else if (text === "Roadmap") {
       outerDivRef.current.scrollTo({
-        top: roadmapRef.current.offsetTop-100,
+        top: roadmapRef.current.offsetTop - 100,
         left: 0,
         behavior: "smooth",
       });
     } else if (text === "Marketplace") {
       outerDivRef.current.scrollTo({
-        top: marketplaceRef.current.offsetTop-100,
+        top: marketplaceRef.current.offsetTop - 100,
         left: 0,
         behavior: "smooth",
       });
     } else if (text === "Download") {
       outerDivRef.current.scrollTo({
-        top: downloadRef.current.offsetTop-100,
+        top: downloadRef.current.offsetTop - 100,
         legt: 0,
         behavior: "smooth",
       });
@@ -92,7 +92,7 @@ function App({route}) {
                 />
               }
             />
-            <Route path="closed-beta" element={<ClosedBeta />} />
+            <Route path="/closed-beta" element={<ClosedBeta />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
