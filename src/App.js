@@ -92,7 +92,7 @@ function App({ route }) {
                 />
               }
             />
-            <Route path="/closed-beta" element={<ClosedBeta />} />
+            <Route path="closed-beta" element={<ClosedBeta />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
 
