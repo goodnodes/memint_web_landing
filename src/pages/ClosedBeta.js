@@ -67,6 +67,7 @@ function ClosedBeta({ closedbetaRef }) {
               <div className="content">
                 <h3>자격 요건</h3>
                 <ul>
+                  <li>아이폰 사용자</li>
                   <li>만 19세 이상의 성인 남녀</li>
                   <li>서울 내에서 미팅 참여가 가능하신 분</li>
                   <li>테스터 활동을 충실히 이행해 주실 분</li>
