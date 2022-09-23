@@ -28,8 +28,8 @@ function ClosedBeta({ closedbetaRef }) {
               <div className="content">
                 <h3>클로즈베타 테스터 모집 기간 및 일정</h3>
                 <ul>
-                  <li>지원 기간: 2022-09-13 ~ 2022-09-26</li>
-                  <li>선정 및 발표: 9월 말 (개별 연락 예정)</li>
+                  <li>지원 기간: 2022-09-13 ~ 2022-09-30</li>
+                  <li>선정 및 발표: 10월 초 (개별 연락 예정)</li>
                   <li>활동 기간: 테스터 선정 발표 후 약 한 달간</li>
                 </ul>
               </div>
@@ -67,7 +67,6 @@ function ClosedBeta({ closedbetaRef }) {
               <div className="content">
                 <h3>자격 요건</h3>
                 <ul>
-                  <li>아이폰 사용자</li>
                   <li>만 19세 이상의 성인 남녀</li>
                   <li>서울 내에서 미팅 참여가 가능하신 분</li>
                   <li>테스터 활동을 충실히 이행해 주실 분</li>
